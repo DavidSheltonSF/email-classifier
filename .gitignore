@@ -2,3 +2,4 @@
 api_key.py
 data
 trainedModel
+*.pyc
