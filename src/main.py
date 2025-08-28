@@ -9,15 +9,12 @@ classifier = EmailClassifierService()
 @app.post('/classify')
 def classify(email: dict):
   try:
-    print(email)
     result = classifier.execute(email)
-    print(result)
     return JSONResponse(
       status_code=200,
       content={'status': 'success', 'result': result}
     )
   except ApplicationError as e:
-    print(e)
     return JSONResponse(
       status_code=e.status_code,
       content={'status': 'error', 'messge': e.message}
