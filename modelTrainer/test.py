@@ -1,7 +1,5 @@
-from transformers import AutoTokenizer, AutoModelForSequenceClassification, Trainer, TrainingArguments
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from transformers import pipeline
-
-
 
 model = AutoModelForSequenceClassification.from_pretrained('./data/model', id2label={0: 'produtivo', 1: 'improdutivo'})
 tokenizer = AutoTokenizer.from_pretrained('./data/tokenizer')
