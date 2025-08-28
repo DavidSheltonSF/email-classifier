@@ -3,7 +3,8 @@ from datasets import load_dataset, Dataset
 
 dataset = load_dataset("csv", data_files={"train": "src/train.csv", "test": "src/test.csv"})
 
-model_name = "adalbertojunior/distilbert-portuguese-cased"
+#model_name = "adalbertojunior/distilbert-portuguese-cased"
+model_name = "neuralmind/bert-base-portuguese-cased"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=2)
 
@@ -13,7 +14,7 @@ def mapCol(batch):
   return batch
 
 def combineSubjectAndBody(batch):
-  batch['text'] = [f"{sub} {body}" for sub, body in zip(batch['subject'], batch['body'])]
+  batch['text'] = [f"{sub.lower()} {body.lower()}" for sub, body in zip(batch['subject'], batch['body'])]
   return batch
 
 def tokenize(batch):
@@ -26,9 +27,9 @@ dataset = dataset.map(tokenize, batched=True)
 training_args = TrainingArguments(
   output_dir='./data/results',
   eval_strategy="epoch",
-  learning_rate=2e-5,
+  learning_rate=5e-5,
   per_device_train_batch_size=8, #4 ou 8
-  num_train_epochs=3,
+  num_train_epochs=5,
   weight_decay=0.03
 )
 
