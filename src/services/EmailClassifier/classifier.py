@@ -1,6 +1,6 @@
-from services.serviceTypes.Email import Email
-from services.helpers import classify_email
-from services.errors.email import MissingEmailBodyError, MissingEmailSubjectError
+from src.services.serviceTypes.Email import Email
+from src.services.helpers import classify_email
+from src.services.errors.email import MissingEmailBodyError, MissingEmailSubjectError
 
 class EmailClassifierService:
   def __init__(self):
@@ -16,6 +16,8 @@ class EmailClassifierService:
     
     if(body == None):
       raise MissingEmailBodyError()
+    
+    print('BOI===============================')
 
 
-    return classify_email(email.get('subject'), email.get('body'))
+    return classify_email(subject, body)

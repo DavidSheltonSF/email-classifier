@@ -1,1 +1,1 @@
-from services.helpers.classify_email import *
+from src.services.helpers.classify_email import *

@@ -1,4 +1,4 @@
-from services.errors.application import ApplicationError
+from src.services.errors.application import ApplicationError
 
 class MissingEmailSubjectError(ApplicationError):
   status_code = 400
@@ -8,4 +8,4 @@ class MissingEmailSubjectError(ApplicationError):
 class MissingEmailBodyError(ApplicationError):
   status_code = 400
   def __init__(self):
-    super().__init__("The email's subject was not provided")
+    super().__init__("The email's body was not provided")
