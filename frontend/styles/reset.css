@@ -30,6 +30,8 @@ input, button, textarea {
 /* Remover padding padrão de listas */
 ul, ol {
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 /* Links sem decoração e herdando cor (ajuste depois no seu theme) */
