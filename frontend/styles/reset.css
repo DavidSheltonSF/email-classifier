@@ -1,0 +1,57 @@
+/* ====== Reset.css (GERADO POR IA) ====== */
+
+/* Box sizing mais previsível */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Zera margens padrão */
+* {
+  margin: 0;
+}
+
+/* Altura total base */
+html, body {
+  height: 100%;
+}
+
+/* Texto mais legível */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Controles de formulário herdam tipografia */
+input, button, textarea {
+  font: inherit;
+}
+
+/* Remover padding padrão de listas */
+ul, ol {
+  padding: 0;
+}
+
+/* Links sem decoração e herdando cor (ajuste depois no seu theme) */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Botões neutros (você estiliza depois) */
+button {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Quebra de linha elegante e títulos balanceados */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+
