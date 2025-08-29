@@ -1,6 +1,6 @@
 import os
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline
-from src.services.serviceTypes.EmailClassification import EmailClassification
+from backend.src.services.serviceTypes.EmailClassification import EmailClassification
 
 def classify_email(subject, body) -> EmailClassification:
   email = f"{subject} {body}"

@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from src.controllers import classify_controller
+from backend.src.controllers import classify_controller
 
 app = FastAPI()
 

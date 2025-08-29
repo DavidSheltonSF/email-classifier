@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from fastapi.responses import JSONResponse
-from src.services.EmailClassifier.classifier import EmailClassifierService
-from src.services.errors.email import ApplicationError
+from backend.src.services.EmailClassifier.classifier import EmailClassifierService
+from backend.src.services.errors.email import ApplicationError
 
 router = APIRouter(prefix='/classify', tags=['classify'])
 classifier = EmailClassifierService()
