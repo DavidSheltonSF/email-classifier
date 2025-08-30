@@ -24,6 +24,16 @@
   background-color: var(--green-positive-color);
 }
 
+.positive-message-text-color {
+  color: var(--green-positive-color);
+  font-weight: bold;
+}
+
+.negative-message-text-color {
+  color: var(--yellow-negative-color-color);
+  font-weight: bold;
+}
+
 .negative-message {
   background-color: var(--yellow-negative-color);
 }
