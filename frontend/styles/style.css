@@ -29,10 +29,6 @@
   text-shadow: 0 0 1px;
 }
 
-.main-content {
-  justify-items: center;
-}
-
 .btn-primary:hover{ 
   transition: background-color 0.5s ease;
   background-color: #1f69df;
