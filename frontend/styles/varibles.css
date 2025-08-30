@@ -1,0 +1,29 @@
+:root {
+  --primary-color: #0B57D0;
+  --background-color: #F4F4F4;
+  --text-color: #333;
+  --green-positive-color: #16BA5B;
+  --yellow-negative-color: #DE9219;
+}
+
+.bg-primary {
+  background-color: var(--background-color);
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+.positive-message {
+  background-color: var(--green-positive-color);
+}
+
+.negative-message {
+  background-color: var(--yellow-negative-color);
+}
