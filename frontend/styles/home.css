@@ -1,0 +1,90 @@
+.main-title {
+  margin-top: 80px;
+  font-size: 36px;
+}
+
+.classify-email-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.classify-email-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  width: 400px;
+  border-radius: 16px;
+  border: 1px solid black;
+}
+
+.classify-email-article-output {
+  border-color: #1f89d1;
+}
+
+.classify-email-header {
+  height: 10%;
+}
+
+.classify-email-footer {
+  height: 15%;
+}
+
+.classify-email-main {
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+}
+
+.classify-email-header-container {
+  width: 100%;
+  border-bottom: 1px black solid;
+  padding: 8px;
+}
+
+.classify-email-header-container {
+  border-color: #1f89d1;
+}
+
+.classify-email-header-text {
+  font-weight: bold;
+}
+
+.classify-email-main-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  padding: 8px;
+}
+
+.classify-email-form-subject,
+.classify-email-form-body {
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+.classify-email-input {
+  border-bottom: 0.5px solid rgb(73, 73, 73);
+}
+
+.classify-email-text-area {
+  padding-top: 8px;
+  height: 200px;
+}
+
+.classify-email-footer-container {
+  align-content: center;
+  padding: 8px;
+}
+
+.btn-classify {
+  background-color: #0b57d0;
+  height: 40px;
+  width: 112px;
+  border-radius: 30px;
+  color: white;
+}
