@@ -92,6 +92,12 @@
 .btn-copy {
   padding: 0;
   margin: 0;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+}
+
+.btn-copy:hover {
+  transition: background-color 0.5s ease;
+  background-color: #8fb5f3;
 }
