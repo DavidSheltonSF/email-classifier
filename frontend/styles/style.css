@@ -19,3 +19,7 @@
 .nav-item:hover {
   text-shadow: 0 0 1px;
 }
+
+.main-content {
+  justify-items: center;
+}
