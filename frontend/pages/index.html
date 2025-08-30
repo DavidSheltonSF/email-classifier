@@ -21,51 +21,51 @@
     </nav>
   </header>
   <main class="main-content">
-    <h1 class="main-title">Classificador de Emails</h1>
-    <section class="classify-email-section">
-      <article class="classify-email-article classify-email-article-input">
-        <header class="classify-email-header classify-email-input-header">
-          <div class="classify-email-header-container classify-email-input-header-container">
-            <p class="classify-email-header-text">
+    <h1 class="title-font-size margin-top-80">Classificador de Emails</h1>
+    <section class="flex-container alin-items-center justify-content-center width-100-percent gap-60 margin-top-80">
+      <article class="flex-container flex-direction-column black-border border-radius-16 classify-email-article">
+        <header>
+          <div class="height-32 padding-8 black-border-botton">
+            <p class="font-weight-bold">
               Seu email
             </p>
           </div>
         </header>
-        <main class="classify-email-main classify-email-input-main">
-          <div class="classify-email-main-container classify-email-input-main-container">
+        <main>
+          <div class="flex-container flex-direction-column padding-8">
             <input class="classify-email-input input-email-subject" placeholder="Subject">
             <textarea class="classify-email-text-area input-email-body" placeholder="Escreva aqui seu email ou arraste solte seu pdf ou arquivo .txt"></textarea>
           </div>
         </main>
-        <footer class="classify-email-footer classify-email-input-footer">
-           <div class="classify-email-footer-container classify-email-input-footer-container">
+        <footer class="margin-top-auto">
+           <div class="padding-8">
              <button class="btn-primary btn-classify-email btn-classify">Classificar</button>
           </div>
         </footer>
       </article>
-       <article class="classify-email-article classify-email-article-output">
-        <header class="classify-email-header classify-email-output-header">
-          <div class="classify-email-header-container classify-email-output-header-container">
-            <p class="classify-email-header-text">
+       <article class="flex-container flex-direction-column black-border border-radius-16 classify-email-article">
+        <header>
+          <div class="height-32 padding-8 black-border-botton">
+            <p class="font-weight-bold">
             Email de Resposta
           </p>
           </div>
         </header>
-        <main class="classify-email-main classify-email-output-main">
-           <div class="classify-email-main-container classify-email-output-main-container">
+        <main>
+           <div class="flex-container flex-direction-column padding-8">
             <input class="classify-email-input output-email-subject" placeholder="Subject" disabled>
             <textarea class="classify-email-text-area output-email-body" placeholder="Aqui será exibido o email de resposta..." disabled></textarea>
+            <span class="msg-email-type text-align-center"></span>
           </div>
-          <span class="msg-email-type"></span>
         </main>
-        <footer class="classify-email-footer classify-email-output-footer">
-          <div class="classify-email-footer-container classify-email-output-footer-container">
+        <footer class="margin-top-auto">
+          <div class="padding-8">
             <button class="btn-classify-email btn-copy">
               <span class="material-symbols-outlined">
                 content_copy
               </span>
             </button>
-            <span class="msg-copy-status"></span>
+            <span class="msg-copy-status "></span>
           </div>
         </footer>
       </article>
