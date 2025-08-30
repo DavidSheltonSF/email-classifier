@@ -28,6 +28,12 @@ body {
 /* Controles de formulário herdam tipografia */
 input, button, textarea {
   font: inherit;
+  border: none;
+  background: none;
+}
+
+input, textarea:focus {
+  outline: none;
 }
 
 /* Remover padding padrão de listas */
