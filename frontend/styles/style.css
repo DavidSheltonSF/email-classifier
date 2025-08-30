@@ -2,6 +2,7 @@
   display: flex;
   gap: 24px;
   padding: 8px;
+  border-bottom: 0.5px solid rgb(192, 191, 191);
 }
 
 .nav-list {
