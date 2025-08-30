@@ -10,6 +10,14 @@ const copyStatusMessage = document.querySelector('.msg-copy-status');
 
 classifyButton.addEventListener('click', async () => {
   try {
+    emailSubjectOutput.value = '';
+    emailBodyOutput.value = '';
+    messageEmailType.textContent = '';
+    messageEmailType.classList = []
+    copyStatusMessage.textContent = '';
+    copyStatusMessage.classList = [];
+
+
     const response = await fetch('http://localhost:8000/classify/email', {
       method: 'POST',
       headers: {
