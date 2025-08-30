@@ -13,9 +13,11 @@ classifyButton.addEventListener('click', async () => {
     emailSubjectOutput.value = '';
     emailBodyOutput.value = '';
     messageEmailType.textContent = '';
-    messageEmailType.classList = []
+    messageEmailType.classList.remove('positive-message-text-color');
+    messageEmailType.classList.remove('negative-message-text-color');
     copyStatusMessage.textContent = '';
-    copyStatusMessage.classList = [];
+    copyStatusMessage.classList.remove('positive-message-text-color');
+    copyStatusMessage.classList.remove('negative-message-text-color');
 
 
     const response = await fetch('http://localhost:8000/classify/email', {
