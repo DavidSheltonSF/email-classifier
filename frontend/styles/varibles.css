@@ -91,6 +91,10 @@
   flex-direction: column;
 }
 
+.gap-16 {
+  gap: 16px;
+}
+
 .gap-60 {
   gap: 60px;
 }
