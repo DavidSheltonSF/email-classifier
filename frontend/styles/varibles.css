@@ -105,6 +105,10 @@
   margin-top: 80px;
 }
 
+.margin-left-auto {
+  margin-left: auto;
+}
+
 /* Border */
 .border-radius-16 {
   border-radius: 16px;
