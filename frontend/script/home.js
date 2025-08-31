@@ -1,3 +1,6 @@
+import { addClassToElements, removeClassFromElements } from './helpers/elementClass.js';
+import { clearFields, disableFields, enableFields } from './helpers/form.js';
+
 const emailSubjectInput = document.querySelector('.input-email-subject');
 const emailBodyInput = document.querySelector('.input-email-body');
 const classifyButton = document.querySelector('.btn-classify');
@@ -11,12 +14,13 @@ const messageEmailType = document.querySelector('.msg-email-type');
 const copyButton = document.querySelector('.btn-copy');
 const copyStatusMessage = document.querySelector('.msg-copy-status');
 
-classifyButton.addEventListener('click', async () => {
+classifyButton.addEventListener('click', async (e) => {
   try {
-    emailSubjectInput.disabled = false;
-    emailSubjectInput.classList.remove('uploaded-pdf');
-    emailBodyInput.disabled = false;
-    emailBodyInput.classList.remove('uploaded-pdf');
+    e.preventDefault()
+    // emailSubjectInput.disabled = false;
+    // emailSubjectInput.classList.remove('uploaded-pdf');
+    // emailBodyInput.disabled = false;
+    // emailBodyInput.classList.remove('uploaded-pdf');
     emailSubjectOutput.value = '';
     emailBodyOutput.value = '';
     messageEmailType.textContent = '';
@@ -26,16 +30,29 @@ classifyButton.addEventListener('click', async () => {
     copyStatusMessage.classList.remove('positive-message-text-color');
     copyStatusMessage.classList.remove('negative-message-text-color');
 
-    const response = await fetch('http://localhost:8000/classify/email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        subject: emailSubjectInput.value,
-        body: emailBodyInput.value,
-      }),
-    });
+
+    let response = null
+
+    if(fileInput.files.length > 0){
+      const formData = new FormData()
+      formData.append('file', fileInput.files[0])
+
+      response = await fetch('http://localhost:8000/classify/email-pdf', {
+        method: 'POST',
+        body: formData,
+      });
+    } else {
+       response = await fetch('http://localhost:8000/classify/email', {
+         method: 'POST',
+         headers: {
+           'Content-Type': 'application/json',
+         },
+         body: JSON.stringify({
+           subject: emailSubjectInput.value,
+           body: emailBodyInput.value,
+         }),
+       });
+    }
 
     const responseJson = await response.json();
     const data = responseJson.data;
@@ -56,26 +73,28 @@ classifyButton.addEventListener('click', async () => {
   }
 });
 
-uploadPdfButton.addEventListener('click', () => {
-  fileInput.click()
-})
+uploadPdfButton.addEventListener('click', (e) => {
+  e.preventDefault()
+  console.log(fileInput.value)
+  fileInput.click();
+});
 
 fileInput.addEventListener('change', () => {
+  const fields = [emailSubjectInput, emailBodyInput];
   const file = fileInput.files[0];
-  emailBodyInput.textContent = file.name
-  emailBodyInput.classList.add('uploaded-pdf');
-  emailSubjectInput.disabled = true;
-  emailBodyInput.disabled = true;
-})
+  emailBodyInput.textContent = file.name;
+  addClassToElements([emailBodyInput], 'uploaded-pdf');
+  disableFields(fields)
+});
 
-clearFieldsButton.addEventListener('click', () => {
-   emailSubjectInput.value = '';
-   emailBodyInput.value = '';
-   emailSubjectInput.disabled = false;
-   emailSubjectInput.classList.remove('uploaded-pdf');
-   emailBodyInput.disabled = false;
-   emailBodyInput.classList.remove('uploaded-pdf');
-})
+clearFieldsButton.addEventListener('click', (e) => {
+  e.preventDefault()
+
+  const fields = [emailSubjectInput, emailBodyInput];
+  clearFields(fields)
+  enableFields(fields);
+  removeClassFromElements(fields, 'uploaded-pdf')
+});
 
 copyButton.addEventListener('click', async () => {
   const text = `${emailSubjectOutput.value}\n\n${emailBodyOutput.value}`;
