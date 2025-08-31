@@ -1,6 +1,8 @@
 const emailSubjectInput = document.querySelector('.input-email-subject');
 const emailBodyInput = document.querySelector('.input-email-body');
 const classifyButton = document.querySelector('.btn-classify');
+const fileInput = document.querySelector('.file-input');
+const uploadPdfButton = document.querySelector('.btn-upload-pdf');
 const clearFieldsButton = document.querySelector('.btn-clear-fields');
 
 const emailSubjectOutput = document.querySelector('.output-email-subject');
@@ -11,6 +13,10 @@ const copyStatusMessage = document.querySelector('.msg-copy-status');
 
 classifyButton.addEventListener('click', async () => {
   try {
+    emailSubjectInput.disabled = false;
+    emailSubjectInput.classList.remove('uploaded-pdf');
+    emailBodyInput.disabled = false;
+    emailBodyInput.classList.remove('uploaded-pdf');
     emailSubjectOutput.value = '';
     emailBodyOutput.value = '';
     messageEmailType.textContent = '';
@@ -50,9 +56,25 @@ classifyButton.addEventListener('click', async () => {
   }
 });
 
+uploadPdfButton.addEventListener('click', () => {
+  fileInput.click()
+})
+
+fileInput.addEventListener('change', () => {
+  const file = fileInput.files[0];
+  emailBodyInput.textContent = file.name
+  emailBodyInput.classList.add('uploaded-pdf');
+  emailSubjectInput.disabled = true;
+  emailBodyInput.disabled = true;
+})
+
 clearFieldsButton.addEventListener('click', () => {
    emailSubjectInput.value = '';
    emailBodyInput.value = '';
+   emailSubjectInput.disabled = false;
+   emailSubjectInput.classList.remove('uploaded-pdf');
+   emailBodyInput.disabled = false;
+   emailBodyInput.classList.remove('uploaded-pdf');
 })
 
 copyButton.addEventListener('click', async () => {

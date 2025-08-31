@@ -48,3 +48,8 @@
   top: 0;
   left: 0;
 }
+
+.uploaded-pdf {
+  font-weight: bold;
+  color: var(--primary-color);
+}
