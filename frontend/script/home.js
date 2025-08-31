@@ -1,6 +1,7 @@
 const emailSubjectInput = document.querySelector('.input-email-subject');
 const emailBodyInput = document.querySelector('.input-email-body');
 const classifyButton = document.querySelector('.btn-classify');
+const clearFieldsButton = document.querySelector('.btn-clear-fields');
 
 const emailSubjectOutput = document.querySelector('.output-email-subject');
 const emailBodyOutput = document.querySelector('.output-email-body');
@@ -36,9 +37,6 @@ classifyButton.addEventListener('click', async () => {
     const reply = data.reply;
     console.log(data);
 
-    emailSubjectInput.value = '';
-    emailBodyInput.value = '';
-
     emailSubjectOutput.value = reply.subject;
     emailBodyOutput.value = reply.body;
 
@@ -51,6 +49,11 @@ classifyButton.addEventListener('click', async () => {
     console.log(error);
   }
 });
+
+clearFieldsButton.addEventListener('click', () => {
+   emailSubjectInput.value = '';
+   emailBodyInput.value = '';
+})
 
 copyButton.addEventListener('click', async () => {
   const text = `${emailSubjectOutput.value}\n\n${emailBodyOutput.value}`;
