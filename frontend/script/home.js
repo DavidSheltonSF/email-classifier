@@ -17,13 +17,13 @@ const copyStatusMessage = document.querySelector('.msg-copy-status');
 classifyButton.addEventListener('click', async (e) => {
   try {
     e.preventDefault()
-    // emailSubjectInput.disabled = false;
-    // emailSubjectInput.classList.remove('uploaded-pdf');
-    // emailBodyInput.disabled = false;
-    // emailBodyInput.classList.remove('uploaded-pdf');
+    emailSubjectInput.disabled = false;
+    emailSubjectInput.classList.remove('uploaded-pdf');
+    emailBodyInput.disabled = false;
+    emailBodyInput.classList.remove('uploaded-pdf');
     emailSubjectOutput.value = '';
     emailBodyOutput.value = '';
-    messageEmailType.textContent = '';
+    messageEmailType.value = '';
     messageEmailType.classList.remove('positive-message-text-color');
     messageEmailType.classList.remove('negative-message-text-color');
     copyStatusMessage.textContent = '';
@@ -64,6 +64,7 @@ classifyButton.addEventListener('click', async (e) => {
     emailBodyOutput.value = reply.body;
 
     messageEmailType.textContent = result.label;
+    console.log(result.label)
 
     const messageColor =
       result.label === 'produtivo' ? 'positive-message' : 'negative-message';
@@ -82,7 +83,7 @@ uploadPdfButton.addEventListener('click', (e) => {
 fileInput.addEventListener('change', () => {
   const fields = [emailSubjectInput, emailBodyInput];
   const file = fileInput.files[0];
-  emailBodyInput.textContent = file.name;
+  emailBodyInput.value = file.name;
   addClassToElements([emailBodyInput], 'uploaded-pdf');
   disableFields(fields)
 });
@@ -154,7 +155,7 @@ dropZone.addEventListener('drop', async (e) => {
       const subject = splitedEmail.shift();
       const joinedBody = splitedEmail.join('\n');
       emailSubjectInput.value = subject;
-      emailBodyInput.textContent = joinedBody;
+      emailBodyInput.value = joinedBody;
     };
     reader.readAsText(file);
   }
