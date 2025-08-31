@@ -34,41 +34,47 @@
               <p class="font-weight-bold">Seu email</p>
             </div>
           </header>
-          <main>
-            <div
-              class="dropzone flex-container flex-direction-column padding-8"
-            >
-              <img
-                class="display-none dragover-icon"
-                src="../assets/site-logo.png"
-                alt=""
-              />
-              <input
-                class="classify-email-input input-email-subject"
-                placeholder="Assunto"
-              />
-              <textarea
-                class="classify-email-text-area input-email-body"
-                placeholder="Escreva aqui seu email ou arraste solte seu pdf ou arquivo .txt"
-              ></textarea>
-            </div>
+          <main class="height-100-percent">
+            <form class="flex-container flex-direction-column justify-content-space-between  height-100-percent" action="">
+              <div
+                class="height-100-percent dropzone flex-container flex-direction-column padding-8"
+              >
+                <img
+                  class="display-none dragover-icon"
+                  src="../assets/site-logo.png"
+                  alt=""
+                />
+                <input
+                  class="classify-email-input input-email-subject"
+                  placeholder="Assunto"
+                />
+                <textarea
+                  class="classify-email-text-area input-email-body"
+                  placeholder="Escreva aqui seu email ou arraste solte seu pdf ou arquivo .txt"
+                ></textarea>
+              </div>
+              <div
+                  class="flex-container justify-content-space-between padding-8"
+                >
+                  <button class="btn-primary btn-classify-email btn-classify">
+                    Classificar
+                  </button>
+                  <span class="margin-left-auto">
+                    <input type="file" class="file-input display-none" />
+                    <button
+                      class="btn-classify-email btn-classify-email-secondary btn-upload-pdf"
+                    >
+                      <img src="../assets/icons/file-icon.svg" alt="" />
+                    </button>
+                    <button type="clear"
+                      class="btn-classify-email btn-classify-email-secondary btn-clear-fields"
+                    >
+                      <img src="../assets/icons/delete-icon.svg" alt="" />
+                    </button>
+                  </span>
+                </div>
+            </form>
           </main>
-          <footer class="margin-top-auto">
-            <div class="flex-container justify-content-space-between padding-8">
-              <button class="btn-primary btn-classify-email btn-classify">
-                Classificar
-              </button>
-             <span class="margin-left-auto">
-              <input type="file" class="file-input display-none">
-               <button class="btn-classify-email btn-classify-email-secondary btn-upload-pdf">
-                <img src="../assets/icons/file-icon.svg" alt="">
-              </button>
-               <button class="btn-classify-email btn-classify-email-secondary btn-clear-fields">
-                <img src="../assets/icons/delete-icon.svg" alt="">
-              </button>
-             </span>
-            </div>
-          </footer>
         </article>
         <article
           class="flex-container flex-direction-column black-border border-radius-16 classify-email-article"
@@ -78,8 +84,9 @@
               <p class="font-weight-bold">Email de Resposta</p>
             </div>
           </header>
-          <main>
-            <div class="flex-container flex-direction-column padding-8">
+          <main class="height-100-percent">
+            <form class="flex-container flex-direction-column justify-content-space-between  height-100-percent" action="">
+              <div class="height-100-percent dropzone flex-container flex-direction-column padding-8">
               <input
                 class="classify-email-input output-email-subject"
                 placeholder="Assunto"
@@ -92,18 +99,19 @@
               ></textarea>
               <span class="msg-email-type text-align-center"></span>
             </div>
-          </main>
-          <footer class="margin-top-auto">
-            <div class="padding-8">
-              <button class="btn-classify-email btn-classify-email-secondary btn-copy">
-                <img src="../assets/icons/copy-icon.svg" alt="">
+            <div class="flex-container justify-content-space-between padding-8">
+              <button
+                class="btn-classify-email btn-classify-email-secondary btn-copy"
+              >
+                <img src="../assets/icons/copy-icon.svg" alt="" />
               </button>
-               <span class="msg-copy-status"></span>
+              <span class="msg-copy-status"></span>
             </div>
-          </footer>
+            </form>
+          </main>
         </article>
       </section>
     </main>
-    <script src="../script/home.js" defer></script>
+    <script src="../script/home.js" type="module" defer></script>
   </body>
 </html>
