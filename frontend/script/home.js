@@ -90,7 +90,7 @@ fileInput.addEventListener('change', () => {
 
 clearFieldsButton.addEventListener('click', (e) => {
   e.preventDefault()
-
+  fileInput.value = ""
   const fields = [emailSubjectInput, emailBodyInput];
   clearFields(fields)
   enableFields(fields);
