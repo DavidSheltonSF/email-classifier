@@ -97,7 +97,8 @@ clearFieldsButton.addEventListener('click', (e) => {
   removeClassFromElements(fields, 'uploaded-pdf')
 });
 
-copyButton.addEventListener('click', async () => {
+copyButton.addEventListener('click', async (e) => {
+  e.preventDefault()
   const text = `${emailSubjectOutput.value}\n\n${emailBodyOutput.value}`;
 
   let message = '';
