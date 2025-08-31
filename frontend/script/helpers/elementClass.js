@@ -1,5 +1,5 @@
 export function addClassToElements(elements, elementCLass) {
-  for (let element of elements){
+  for (let element of elements) {
     element.classList.add(elementCLass);
   }
 }

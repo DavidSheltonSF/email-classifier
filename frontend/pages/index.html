@@ -35,7 +35,10 @@
             </div>
           </header>
           <main class="height-100-percent">
-            <form class="flex-container flex-direction-column justify-content-space-between  height-100-percent" action="">
+            <form
+              class="flex-container flex-direction-column justify-content-space-between height-100-percent"
+              action=""
+            >
               <div
                 class="height-100-percent dropzone flex-container flex-direction-column padding-8"
               >
@@ -54,25 +57,26 @@
                 ></textarea>
               </div>
               <div
-                  class="flex-container justify-content-space-between padding-8"
-                >
-                  <button class="btn-primary btn-classify-email btn-classify">
-                    Classificar
+                class="flex-container justify-content-space-between padding-8"
+              >
+                <button class="btn-primary btn-classify-email btn-classify">
+                  Classificar
+                </button>
+                <span class="margin-left-auto">
+                  <input type="file" class="file-input display-none" />
+                  <button
+                    class="btn-classify-email btn-classify-email-secondary btn-upload-pdf"
+                  >
+                    <img src="../assets/icons/file-icon.svg" alt="" />
                   </button>
-                  <span class="margin-left-auto">
-                    <input type="file" class="file-input display-none" />
-                    <button
-                      class="btn-classify-email btn-classify-email-secondary btn-upload-pdf"
-                    >
-                      <img src="../assets/icons/file-icon.svg" alt="" />
-                    </button>
-                    <button type="clear"
-                      class="btn-classify-email btn-classify-email-secondary btn-clear-fields"
-                    >
-                      <img src="../assets/icons/delete-icon.svg" alt="" />
-                    </button>
-                  </span>
-                </div>
+                  <button
+                    type="clear"
+                    class="btn-classify-email btn-classify-email-secondary btn-clear-fields"
+                  >
+                    <img src="../assets/icons/delete-icon.svg" alt="" />
+                  </button>
+                </span>
+              </div>
             </form>
           </main>
         </article>
@@ -85,28 +89,33 @@
             </div>
           </header>
           <main class="height-100-percent">
-            <form class="flex-container flex-direction-column justify-content-space-between  height-100-percent" action="">
-              <div class="height-100-percent dropzone flex-container flex-direction-column padding-8">
-              <input
-                class="classify-email-input output-email-subject"
-                placeholder="Assunto"
-                disabled
-              />
-              <textarea
-                class="classify-email-text-area output-email-body"
-                placeholder="Aqui será exibido o email de resposta..."
-                disabled
-              ></textarea>
-              <span class="msg-email-type text-align-center"></span>
-            </div>
-            <div class="flex-container gap-16 padding-8">
-              <button
-                class="btn-classify-email btn-classify-email-secondary btn-copy"
+            <form
+              class="flex-container flex-direction-column justify-content-space-between height-100-percent"
+              action=""
+            >
+              <div
+                class="height-100-percent dropzone flex-container flex-direction-column padding-8"
               >
-                <img src="../assets/icons/copy-icon.svg" alt="" />
-              </button>
-              <span class="msg-copy-status align-content-center"></span>
-            </div>
+                <input
+                  class="classify-email-input output-email-subject"
+                  placeholder="Assunto"
+                  disabled
+                />
+                <textarea
+                  class="classify-email-text-area output-email-body"
+                  placeholder="Aqui será exibido o email de resposta..."
+                  disabled
+                ></textarea>
+                <span class="msg-email-type text-align-center"></span>
+              </div>
+              <div class="flex-container gap-16 padding-8">
+                <button
+                  class="btn-classify-email btn-classify-email-secondary btn-copy"
+                >
+                  <img src="../assets/icons/copy-icon.svg" alt="" />
+                </button>
+                <span class="msg-copy-status align-content-center"></span>
+              </div>
             </form>
           </main>
         </article>

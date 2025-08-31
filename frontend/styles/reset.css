@@ -1,7 +1,9 @@
 /* ====== Reset.css (GERADO POR IA) ====== */
 
 /* Box sizing mais previsível */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -11,14 +13,15 @@
 }
 
 /* Altura total base */
-html, body {
+html,
+body {
   height: 100%;
 }
 
 /* Texto mais legível */
 body {
   color: #333333;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -26,18 +29,22 @@ body {
 }
 
 /* Controles de formulário herdam tipografia */
-input, button, textarea {
+input,
+button,
+textarea {
   font: inherit;
   border: none;
   background: none;
 }
 
-input, textarea:focus {
+input,
+textarea:focus {
   outline: none;
 }
 
 /* Remover padding padrão de listas */
-ul, ol {
+ul,
+ol {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -58,11 +65,20 @@ button {
 }
 
 /* Quebra de linha elegante e títulos balanceados */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
-
-

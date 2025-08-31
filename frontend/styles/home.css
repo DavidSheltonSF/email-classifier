@@ -18,8 +18,8 @@
   border-radius: 30px;
 }
 
-.btn-classify-email-secondary{
-   width: 40px;
+.btn-classify-email-secondary {
+  width: 40px;
   height: 40px;
   border-radius: 15px;
 }
@@ -38,7 +38,7 @@
   position: relative;
 }
 
-.dragover-icon{
+.dragover-icon {
   position: absolute;
   opacity: 0.5;
   width: 100%;

@@ -1,4 +1,7 @@
-import { addClassToElements, removeClassFromElements } from './helpers/elementClass.js';
+import {
+  addClassToElements,
+  removeClassFromElements,
+} from './helpers/elementClass.js';
 import { clearFields, disableFields, enableFields } from './helpers/form.js';
 
 const emailSubjectInput = document.querySelector('.input-email-subject');
@@ -16,7 +19,7 @@ const copyStatusMessage = document.querySelector('.msg-copy-status');
 
 classifyButton.addEventListener('click', async (e) => {
   try {
-    e.preventDefault()
+    e.preventDefault();
     emailSubjectInput.disabled = false;
     emailSubjectInput.classList.remove('uploaded-pdf');
     emailBodyInput.disabled = false;
@@ -30,28 +33,27 @@ classifyButton.addEventListener('click', async (e) => {
     copyStatusMessage.classList.remove('positive-message-text-color');
     copyStatusMessage.classList.remove('negative-message-text-color');
 
+    let response = null;
 
-    let response = null
-
-    if(fileInput.files.length > 0){
-      const formData = new FormData()
-      formData.append('file', fileInput.files[0])
+    if (fileInput.files.length > 0) {
+      const formData = new FormData();
+      formData.append('file', fileInput.files[0]);
 
       response = await fetch('http://localhost:8000/classify/email-pdf', {
         method: 'POST',
         body: formData,
       });
     } else {
-       response = await fetch('http://localhost:8000/classify/email', {
-         method: 'POST',
-         headers: {
-           'Content-Type': 'application/json',
-         },
-         body: JSON.stringify({
-           subject: emailSubjectInput.value,
-           body: emailBodyInput.value,
-         }),
-       });
+      response = await fetch('http://localhost:8000/classify/email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          subject: emailSubjectInput.value,
+          body: emailBodyInput.value,
+        }),
+      });
     }
 
     const responseJson = await response.json();
@@ -64,7 +66,7 @@ classifyButton.addEventListener('click', async (e) => {
     emailBodyOutput.value = reply.body;
 
     messageEmailType.textContent = result.label;
-    console.log(result.label)
+    console.log(result.label);
 
     const messageColor =
       result.label === 'produtivo' ? 'positive-message' : 'negative-message';
@@ -75,8 +77,8 @@ classifyButton.addEventListener('click', async (e) => {
 });
 
 uploadPdfButton.addEventListener('click', (e) => {
-  e.preventDefault()
-  console.log(fileInput.value)
+  e.preventDefault();
+  console.log(fileInput.value);
   fileInput.click();
 });
 
@@ -85,20 +87,20 @@ fileInput.addEventListener('change', () => {
   const file = fileInput.files[0];
   emailBodyInput.value = file.name;
   addClassToElements([emailBodyInput], 'uploaded-pdf');
-  disableFields(fields)
+  disableFields(fields);
 });
 
 clearFieldsButton.addEventListener('click', (e) => {
-  e.preventDefault()
-  fileInput.value = ""
+  e.preventDefault();
+  fileInput.value = '';
   const fields = [emailSubjectInput, emailBodyInput];
-  clearFields(fields)
+  clearFields(fields);
   enableFields(fields);
-  removeClassFromElements(fields, 'uploaded-pdf')
+  removeClassFromElements(fields, 'uploaded-pdf');
 });
 
 copyButton.addEventListener('click', async (e) => {
-  e.preventDefault()
+  e.preventDefault();
   const text = `${emailSubjectOutput.value}\n\n${emailBodyOutput.value}`;
 
   let message = '';
