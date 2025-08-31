@@ -19,7 +19,6 @@ classifyButton.addEventListener('click', async () => {
     copyStatusMessage.classList.remove('positive-message-text-color');
     copyStatusMessage.classList.remove('negative-message-text-color');
 
-
     const response = await fetch('http://localhost:8000/classify/email', {
       method: 'POST',
       headers: {
@@ -77,4 +76,42 @@ copyButton.addEventListener('click', async () => {
         copyStatusMessage.classList.add(messageColor);
       }
     });
+});
+
+const dropZone = document.querySelector('.dropzone');
+const dragOverIcon = document.querySelector('.dragover-icon');
+
+['dragenter', 'dragover', 'dragleave', 'drop'].forEach((eventName) => {
+  dropZone.addEventListener(eventName, (e) => e.preventDefault());
+});
+
+dropZone.addEventListener('dragover', (e) => {
+  dragOverIcon.classList.remove('display-none');
+});
+
+dropZone.addEventListener('dragleave', (e) => {
+  if (!dropZone.contains(e.relatedTarget)) {
+    dragOverIcon.classList.add('display-none');
+  }
+});
+
+dropZone.addEventListener('drop', async (e) => {
+  dragOverIcon.classList.add('display-none');
+
+  const file = e.dataTransfer.files[0];
+
+  if (!file) {
+    return;
+  }
+  if (file.type == 'text/plain') {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const splitedEmail = reader.result.split('\n');
+      const subject = splitedEmail.shift();
+      const joinedBody = splitedEmail.join('\n');
+      emailSubjectInput.value = subject;
+      emailBodyInput.textContent = joinedBody;
+    };
+    reader.readAsText(file);
+  }
 });

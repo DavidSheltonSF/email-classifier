@@ -133,3 +133,7 @@
 .height-32 {
   height: 32px;
 }
+
+.display-none {
+  display: none;
+}
