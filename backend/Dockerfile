@@ -1,6 +1,6 @@
 FROM python:3.12-slim
 
-WORKDIR /backend
+WORKDIR /app
 
 ENV PYTHONPATH=/backend
 
