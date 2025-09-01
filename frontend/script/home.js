@@ -48,7 +48,7 @@ classifyButton.addEventListener('click', async (e) => {
       );
     } else {
       response = await fetch(
-        'http://localhoshttps://localhost.com:8000/classify/email',
+        'http://localhoshttps://desafio-autou-back.onrender.com:8000/classify/email',
         {
           method: 'POST',
           headers: {
