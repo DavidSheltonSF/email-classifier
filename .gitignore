@@ -5,3 +5,4 @@ trainedModel
 *.pyc
 venv
 model
+.vscode
