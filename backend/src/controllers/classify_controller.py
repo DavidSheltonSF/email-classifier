@@ -1,9 +1,19 @@
 import PyPDF2
 import io
+import os
+from dotenv import load_dotenv
+from datasets import Dataset, DatasetDict
+from typing import List
 from fastapi import APIRouter, UploadFile, File
 from fastapi.responses import JSONResponse
 from src.services.EmailClassifier.classifier import EmailClassifierService
 from src.services.errors.email import ApplicationError
+import pandas as pd
+from huggingface_hub import login
+
+load_dotenv()
+
+login(os.getenv('HUGGINGFACE_HUB_TOKEN'))
 
 router = APIRouter(prefix='/classify', tags=['classify'])
 classifier = EmailClassifierService()
@@ -45,6 +55,39 @@ async def classify_email_pdf(file: UploadFile = File(...)):
     return JSONResponse(
     status_code=200,
     content={'status': 'success', 'data': data}
+    )
+  except ApplicationError as e:
+    return JSONResponse(
+      status_code=e.status_code,
+      content={'status': 'error', 'message': e.message}
+    )
+  
+@router.post('/save-dataset')
+async def save_data_set(files: List[UploadFile] = File(...)):
+  try:
+    
+    train_content = await files[0].read()
+    train_decoded = train_content.decode('utf-8')
+    train_buffer = io.StringIO(train_decoded)
+    train_df = pd.read_csv(train_buffer)
+
+    test_content = await files[1].read()
+    test_decoded = test_content.decode('utf-8')
+    test_buffer = io.StringIO(test_decoded)
+    test_df = pd.read_csv(test_buffer)
+
+    
+  
+    dataset = DatasetDict({
+      "train": Dataset.from_pandas(train_df),
+      "test": Dataset.from_pandas(test_df)
+    })
+
+    dataset.push_to_hub("davidshelton/email-classifier-soft-dataset")
+
+    return JSONResponse(
+    status_code=200,
+    content={'status': 'success', 'message': 'Dataset uploaded successfuly'}
     )
   except ApplicationError as e:
     return JSONResponse(
