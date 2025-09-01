@@ -40,7 +40,7 @@ classifyButton.addEventListener('click', async (e) => {
       formData.append('file', fileInput.files[0]);
 
       response = await fetch(
-        'https://desafio-autou-back.onrender.com/classify/email-pdf',
+        'https://desafio-autou-back.onrender.com:8000/classify/email-pdf',
         {
           method: 'POST',
           body: formData,
@@ -48,7 +48,7 @@ classifyButton.addEventListener('click', async (e) => {
       );
     } else {
       response = await fetch(
-        'http://localhoshttps://desafio-autou-back.onrender.com:8000/classify/email',
+        'http://localhoshttps://localhost.com:8000/classify/email',
         {
           method: 'POST',
           headers: {
