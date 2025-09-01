@@ -5,7 +5,7 @@ from src.controllers import classify_controller
 app = FastAPI()
 
 origins = [
-  "http://localhost:8000",
+  "http://localhost:5501",
   "https://desafio-autou-back.onrender.com:8000"
 ]
 
