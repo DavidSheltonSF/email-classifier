@@ -7,7 +7,7 @@ load_dotenv()
 
 login(os.getenv('HUGGINGFACE_HUB_TOKEN'))
 
-BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__)))
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../"))
 MODEL_PATH = os.path.join(BASE_DIR, "model")
 
 if not os.listdir(MODEL_PATH):
