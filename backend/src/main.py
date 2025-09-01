@@ -24,8 +24,8 @@ if not os.listdir(MODEL_PATH):
 app = FastAPI()
 
 origins = [
-  "http://localhost:5501",
-  "https://desafio-autou-back.onrender.com:8000"
+  "http://localhost:8000",
+  "http://0.0.0.0:8000",
 ]
 
 app.add_middleware(
