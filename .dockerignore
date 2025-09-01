@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+modelTrainer
+trainedModel
+venv
+printsDePromptsChatGPT
+.env
+README.md
+.gitignore
+.prettier
+LICENSE
