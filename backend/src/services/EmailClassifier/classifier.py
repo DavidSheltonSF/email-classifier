@@ -1,7 +1,7 @@
-from backend.src.services.serviceTypes.Email import Email
-from backend.src.services.helpers import classify_email
-from backend.src.services.errors.email import MissingEmailBodyError, MissingEmailSubjectError
-from backend.src.services.helpers.repliesMap import repliesMap
+from src.services.serviceTypes.Email import Email
+from src.services.helpers import classify_email
+from src.services.errors.email import MissingEmailBodyError, MissingEmailSubjectError
+from src.services.helpers.repliesMap import repliesMap
 
 class EmailClassifierService:
   def __init__(self):

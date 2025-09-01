@@ -1,4 +1,4 @@
-from backend.src.services.errors.application import ApplicationError
+from src.services.errors.application import ApplicationError
 
 class MissingEmailSubjectError(ApplicationError):
   status_code = 400

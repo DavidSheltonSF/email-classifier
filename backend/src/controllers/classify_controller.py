@@ -2,8 +2,8 @@ import PyPDF2
 import io
 from fastapi import APIRouter, UploadFile, File
 from fastapi.responses import JSONResponse
-from backend.src.services.EmailClassifier.classifier import EmailClassifierService
-from backend.src.services.errors.email import ApplicationError
+from src.services.EmailClassifier.classifier import EmailClassifierService
+from src.services.errors.email import ApplicationError
 
 router = APIRouter(prefix='/classify', tags=['classify'])
 classifier = EmailClassifierService()

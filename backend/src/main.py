@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.src.controllers import classify_controller
+from src.controllers import classify_controller
 
 app = FastAPI()
 
