@@ -8,7 +8,7 @@ from fastapi import APIRouter, UploadFile, File
 from fastapi.responses import JSONResponse
 from src.services.EmailClassifier.classifier import EmailClassifierService
 from src.services.errors.email import ApplicationError
-from src.services.helpers.download_model_from_hub import download_model_from_hub
+from backend.download_model_from_hub import download_model_from_hub
 from src.services.helpers.train_model_and_upload import train_model_and_upload
 import pandas as pd
 from huggingface_hub import login
@@ -92,27 +92,6 @@ async def save_data_set(files: List[UploadFile] = File(...)):
     status_code=200,
     content={'status': 'success', 'message': 'Dataset uploaded successfuly'}
     )
-  except ApplicationError as e:
-    return JSONResponse(
-      status_code=e.status_code,
-      content={'status': 'error', 'message': e.message}
-    )
-  
-@router.post('/download-model')
-def download_model():
-  try:
-    result = download_model_from_hub()
-    if(result):
-      return JSONResponse(
-      status_code=200,
-      content={'status': 'success', 'message': 'model downloaded successfuly'}
-    )
-
-    return JSONResponse(
-      status_code=200,
-      content={'status': 'error', 'message': 'model was not downloaded'}
-    )
-
   except ApplicationError as e:
     return JSONResponse(
       status_code=e.status_code,
