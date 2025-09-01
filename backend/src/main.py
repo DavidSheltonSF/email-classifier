@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from src.controllers import classify_controller
+import src.download_model_from_hub
 
 app = FastAPI()
 

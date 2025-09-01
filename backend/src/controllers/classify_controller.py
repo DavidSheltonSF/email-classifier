@@ -8,7 +8,6 @@ from fastapi import APIRouter, UploadFile, File
 from fastapi.responses import JSONResponse
 from src.services.EmailClassifier.classifier import EmailClassifierService
 from src.services.errors.email import ApplicationError
-from backend.download_model_from_hub import download_model_from_hub
 from src.services.helpers.train_model_and_upload import train_model_and_upload
 import pandas as pd
 from huggingface_hub import login
