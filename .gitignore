@@ -4,3 +4,4 @@ data
 trainedModel
 *.pyc
 venv
+model
