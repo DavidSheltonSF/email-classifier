@@ -1,5 +1,4 @@
-# python com pythorch
-FROM huggingface/transformers-pytorch-cpu
+FROM python:3.12-slim
 
 WORKDIR /backend
 
