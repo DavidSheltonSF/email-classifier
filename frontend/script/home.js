@@ -17,6 +17,11 @@ const messageEmailType = document.querySelector('.msg-email-type');
 const copyButton = document.querySelector('.btn-copy');
 const copyStatusMessage = document.querySelector('.msg-copy-status');
 
+const hostMap = {
+  localhost: 'http://localhost',
+  render: 'https://desafio-autou-back.onrender.com',
+};
+
 classifyButton.addEventListener('click', async (e) => {
   try {
     e.preventDefault();
@@ -40,7 +45,7 @@ classifyButton.addEventListener('click', async (e) => {
       formData.append('file', fileInput.files[0]);
 
       response = await fetch(
-        'https://desafio-autou-back.onrender.com:8000/classify/email-pdf',
+        `${hostMap['render']}:8000/classify/email-pdf`,
         {
           method: 'POST',
           body: formData,
@@ -48,7 +53,7 @@ classifyButton.addEventListener('click', async (e) => {
       );
     } else {
       response = await fetch(
-        'http://localhoshttps://desafio-autou-back.onrender.com:8000/classify/email',
+        `${hostMap['render']}:8000/classify/email`,
         {
           method: 'POST',
           headers: {
