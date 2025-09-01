@@ -9,6 +9,7 @@ from fastapi.responses import JSONResponse
 from src.services.EmailClassifier.classifier import EmailClassifierService
 from src.services.errors.email import ApplicationError
 from src.services.helpers.download_model_from_hub import download_model_from_hub
+from src.services.helpers.train_model_and_upload import train_model_and_upload
 import pandas as pd
 from huggingface_hub import login
 
@@ -110,6 +111,27 @@ def download_model():
     return JSONResponse(
       status_code=200,
       content={'status': 'error', 'message': 'model was not downloaded'}
+    )
+
+  except ApplicationError as e:
+    return JSONResponse(
+      status_code=e.status_code,
+      content={'status': 'error', 'message': e.message}
+    )
+  
+@router.post('/train-model')
+def train_model():
+  try:
+    result = train_model_and_upload()
+    if(result):
+      return JSONResponse(
+      status_code=200,
+      content={'status': 'success', 'message': 'model trained successfuly'}
+    )
+
+    return JSONResponse(
+      status_code=200,
+      content={'status': 'error', 'message': 'model was not trained'}
     )
 
   except ApplicationError as e:
