@@ -39,21 +39,27 @@ classifyButton.addEventListener('click', async (e) => {
       const formData = new FormData();
       formData.append('file', fileInput.files[0]);
 
-      response = await fetch('http://localhost:8000/classify/email-pdf', {
-        method: 'POST',
-        body: formData,
-      });
+      response = await fetch(
+        'https://desafio-autou-back.onrender.com/classify/email-pdf',
+        {
+          method: 'POST',
+          body: formData,
+        }
+      );
     } else {
-      response = await fetch('http://localhost:8000/classify/email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          subject: emailSubjectInput.value,
-          body: emailBodyInput.value,
-        }),
-      });
+      response = await fetch(
+        'http://localhoshttps://desafio-autou-back.onrender.com:8000/classify/email',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            subject: emailSubjectInput.value,
+            body: emailBodyInput.value,
+          }),
+        }
+      );
     }
 
     const responseJson = await response.json();
