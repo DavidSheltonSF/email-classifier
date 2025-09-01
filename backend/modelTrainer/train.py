@@ -1,7 +1,7 @@
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, Trainer, TrainingArguments
 from datasets import load_dataset, Dataset
 
-dataset = load_dataset("csv", data_files={"train": "src/train.csv", "test": "src/test.csv"})
+dataset = load_dataset("csv", data_files={"train": "./backend/modelTrainer/train.csv", "test": "./backend/modelTrainer/test.csv"})
 
 #model_name = "adalbertojunior/distilbert-portuguese-cased"
 model_name = "neuralmind/bert-base-portuguese-cased"
@@ -44,5 +44,5 @@ trainer = Trainer(
 print('training...')
 trainer.train()
 
-model.save_pretrained("./data/model")
-tokenizer.save_pretrained("./data/tokenizer")
+model.save_pretrained("./model")
+tokenizer.save_pretrained("./model")

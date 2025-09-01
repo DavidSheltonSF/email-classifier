@@ -1,8 +1,9 @@
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from transformers import pipeline
 
-model = AutoModelForSequenceClassification.from_pretrained('./data/model', id2label={0: 'produtivo', 1: 'improdutivo'})
-tokenizer = AutoTokenizer.from_pretrained('./data/tokenizer')
+
+model = AutoModelForSequenceClassification.from_pretrained('./backend/model', id2label={0: 'produtivo', 1: 'improdutivo'})
+tokenizer = AutoTokenizer.from_pretrained('./backend/model')
 classifier = pipeline('text-classification', model=model, tokenizer=tokenizer)
 
 text_produtivo = 'Relatório financeiro Favor revisar o relatório financeiro antes da reunião de diretoria.'
