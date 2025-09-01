@@ -5,7 +5,8 @@ from src.controllers import classify_controller
 app = FastAPI()
 
 origins = [
-  "http://localhost:5500"
+  "http://localhost:8000",
+  "https://desafio-autou-back.onrender.com:8000"
 ]
 
 app.add_middleware(
