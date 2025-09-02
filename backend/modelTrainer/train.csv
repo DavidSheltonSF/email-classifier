@@ -341,3 +341,184 @@ subject,body,label
 "Recomendação de restaurante","Você precisa ir a este restaurante, é fantástico.","improdutivo"
 "Convite para café","Vamos marcar um café e colocar o papo em dia?","improdutivo"
 "Novas fotos de viagem","Anexei as novas fotos da minha viagem.","improdutivo"
+"Solicitação de aprovação","Por favor, aprove o documento para que possamos prosseguir.","produtivo"
+"Detalhes do evento","Detalhes sobre o evento do próximo mês estão no anexo.","produtivo"
+"Atualização do projeto","Segue a última versão do relatório de status.","produtivo"
+"Confirmação de reunião","Confirme sua presença na reunião de amanhã às 10h.","produtivo"
+"Relatório financeiro","Segue o relatório financeiro do trimestre para análise.","produtivo"
+"Pedido de orçamento","Solicito orçamento para o novo projeto.","produtivo"
+"Entrega de tarefa","Tarefa X concluída, segue o arquivo em anexo.","produtivo"
+"Aprovação de férias","Favor aprovar minhas férias para a próxima semana.","produtivo"
+"Feedback do cliente","O cliente enviou sugestões, veja o documento anexado.","produtivo"
+"Atualização do sistema","O sistema foi atualizado com sucesso na madrugada.","produtivo"
+"Reunião de alinhamento","Agendada reunião de alinhamento de equipe amanhã.","produtivo"
+"Solicitação de suporte","Preciso de suporte técnico para o servidor.","produtivo"
+"Planejamento semanal","Segue o planejamento semanal da equipe.","produtivo"
+"Confirmação de entrega","Entrega prevista para amanhã, favor confirmar.","produtivo"
+"Solicitação de reunião","Gostaria de agendar uma reunião para discutir o projeto.","produtivo"
+"Atualização de cadastro","Os dados foram atualizados conforme solicitado.","produtivo"
+"Documento assinado","Segue documento assinado em anexo.","produtivo"
+"Relatório de vendas","Anexo relatório de vendas do mês de agosto.","produtivo"
+"Pedido de material","Solicito material de escritório para a equipe.","produtivo"
+"Revisão de contrato","Contrato revisado, favor verificar e aprovar.","produtivo"
+"Confirmação de pagamento","Pagamento recebido e registrado no sistema.","produtivo"
+"Agenda do evento","Segue a agenda detalhada do evento.","produtivo"
+"Notificação de prazo","Prazo para entrega do projeto se encerra sexta-feira.","produtivo"
+"Atualização de projeto","Atualizações no projeto X disponíveis no repositório.","produtivo"
+"Solicitação de feedback","Peço seu feedback sobre a proposta enviada.","produtivo"
+"Alerta de sistema","Sistema apresentando instabilidade, equipe técnica avisada.","produtivo"
+"Solicitação de treinamento","Favor agendar treinamento para novos funcionários.","produtivo"
+"Relatório de desempenho","Segue relatório de desempenho da equipe.","produtivo"
+"Convite para webinar","Participe do webinar sobre produtividade na próxima semana.","produtivo"
+"Confirmação de presença","Confirmo minha presença na reunião marcada.","produtivo"
+"Atualização de política","Nova política interna publicada, favor revisar.","produtivo"
+"Solicitação de reunião urgente","Necessito discutir assunto urgente, disponibilidade?","produtivo"
+"Envio de documento","Segue documento solicitado em anexo.","produtivo"
+"Proposta de parceria","Envio proposta de parceria para análise.","produtivo"
+"Relatório de incidente","Registro de incidente ocorrido na última semana.","produtivo"
+"Solicitação de assinatura","Favor assinar o documento em anexo.","produtivo"
+"Confirmação de entrega de material","Material enviado e recebido com sucesso.","produtivo"
+"Alinhamento de equipe","Sugiro reunião para alinhamento das tarefas.","produtivo"
+"Revisão de procedimento","Favor revisar procedimento atualizado.","produtivo"
+"Solicitação de dados","Preciso dos dados atualizados até sexta-feira.","produtivo"
+"Agendamento de call","Vamos agendar uma call para tratar do projeto.","produtivo"
+"Atualização de status","Segue status atualizado do projeto.","produtivo"
+"Relatório de reuniões","Resumo das reuniões realizadas no mês.","produtivo"
+"Pedido de alteração","Solicito alteração no documento enviado.","produtivo"
+"Confirmação de reunião online","Confirmação de presença na reunião online.","produtivo"
+"Envio de planilha","Segue planilha atualizada com os dados solicitados.","produtivo"
+"Notificação de evento","Evento programado para quinta-feira, confirme presença.","produtivo"
+"Solicitação de relatório","Preciso do relatório atualizado até amanhã.","produtivo"
+"Atualização de agenda","Agenda da semana atualizada, favor revisar.","produtivo"
+"F$%@@","HaWRTWRTYYYB144","improdutivo"
+"Bom dia !@@","Gostaria de te convidar para a festa","improdutivo"
+"???","asdkjfhweuir","improdutivo"
+"Testando email","asdf1234","improdutivo"
+"Oi!","vc viu meu meme?","improdutivo"
+"!!!","qwerty","improdutivo"
+"Mensagem aleatória","blablabla","improdutivo"
+"Confuso","não sei oq escrever","improdutivo"
+"Alert#","$$$%%%","improdutivo"
+"Spam spam","xxxxx","improdutivo"
+"Hey!","vc tem tempo?","improdutivo"
+"123","456","improdutivo"
+"Teste","teste teste","improdutivo"
+"Hahaha","lololol","improdutivo"
+"Random","!!!???","improdutivo"
+"???","asdfghjkl","improdutivo"
+"Foo","bar","improdutivo"
+"Hi!","check this out","improdutivo"
+"Lorem","ipsum dolor sit amet","improdutivo"
+"Ping","pong","improdutivo"
+"Email confuso","não sei oq escrever","improdutivo"
+"F@#","*&^%$#@!","improdutivo"
+"Mensagem","zzzxxxccc","improdutivo"
+"???","qwertyuiop","improdutivo"
+"Confuso 2","lorem ipsum","improdutivo"
+"Texto estranho","asdasdasd","improdutivo"
+"Teste 2","123123123","improdutivo"
+"F@#2","!@#$%^","improdutivo"
+"Haha2","lol","improdutivo"
+"Spam2","xxxxx","improdutivo"
+"Confuso 3","hjklpoiuy","improdutivo"
+"Oi2","vc chegou em casa?","improdutivo"
+"Mensagem aleatória 2","aaaaa","improdutivo"
+Solicitação de aprovação,"Por favor, aprove o documento para que possamos prosseguir.",produtivo
+Detalhes do evento,Detalhes sobre o evento do próximo mês estão no anexo.,produtivo
+Atualização do projeto,Segue a última versão do relatório de status.,produtivo
+Confirmação de reunião,Confirme sua presença na reunião de amanhã às 10h.,produtivo
+Relatório financeiro,Segue o relatório financeiro do trimestre para análise.,produtivo
+Pedido de orçamento,Solicito orçamento para o novo projeto.,produtivo
+Entrega de tarefa,"Tarefa X concluída, segue o arquivo em anexo.",produtivo
+Aprovação de férias,Favor aprovar minhas férias para a próxima semana.,produtivo
+Feedback do cliente,"O cliente enviou sugestões, veja o documento anexado.",produtivo
+Atualização do sistema,O sistema foi atualizado com sucesso na madrugada.,produtivo
+Reunião de alinhamento,Agendada reunião de alinhamento de equipe amanhã.,produtivo
+Solicitação de suporte,Preciso de suporte técnico para o servidor.,produtivo
+Planejamento semanal,Segue o planejamento semanal da equipe.,produtivo
+Confirmação de entrega,"Entrega prevista para amanhã, favor confirmar.",produtivo
+Solicitação de reunião,Gostaria de agendar uma reunião para discutir o projeto.,produtivo
+Atualização de cadastro,Os dados foram atualizados conforme solicitado.,produtivo
+Documento assinado,Segue documento assinado em anexo.,produtivo
+Relatório de vendas,Anexo relatório de vendas do mês de agosto.,produtivo
+Pedido de material,Solicito material de escritório para a equipe.,produtivo
+Revisão de contrato,"Contrato revisado, favor verificar e aprovar.",produtivo
+Confirmação de pagamento,Pagamento recebido e registrado no sistema.,produtivo
+Agenda do evento,Segue a agenda detalhada do evento.,produtivo
+Notificação de prazo,Prazo para entrega do projeto se encerra sexta-feira.,produtivo
+Atualização de projeto,Atualizações no projeto X disponíveis no repositório.,produtivo
+Solicitação de feedback,Peço seu feedback sobre a proposta enviada.,produtivo
+Alerta de sistema,"Sistema apresentando instabilidade, equipe técnica avisada.",produtivo
+Solicitação de treinamento,Favor agendar treinamento para novos funcionários.,produtivo
+Relatório de desempenho,Segue relatório de desempenho da equipe.,produtivo
+Convite para webinar,Participe do webinar sobre produtividade na próxima semana.,produtivo
+Confirmação de presença,Confirmo minha presença na reunião marcada.,produtivo
+Atualização de política,"Nova política interna publicada, favor revisar.",produtivo
+Solicitação de reunião urgente,"Necessito discutir assunto urgente, disponibilidade?",produtivo
+Envio de documento,Segue documento solicitado em anexo.,produtivo
+Proposta de parceria,Envio proposta de parceria para análise.,produtivo
+Relatório de incidente,Registro de incidente ocorrido na última semana.,produtivo
+Solicitação de assinatura,Favor assinar o documento em anexo.,produtivo
+Confirmação de entrega de material,Material enviado e recebido com sucesso.,produtivo
+Alinhamento de equipe,Sugiro reunião para alinhamento das tarefas.,produtivo
+Revisão de procedimento,Favor revisar procedimento atualizado.,produtivo
+Solicitação de dados,Preciso dos dados atualizados até sexta-feira.,produtivo
+Agendamento de call,Vamos agendar uma call para tratar do projeto.,produtivo
+Atualização de status,Segue status atualizado do projeto.,produtivo
+Relatório de reuniões,Resumo das reuniões realizadas no mês.,produtivo
+Pedido de alteração,Solicito alteração no documento enviado.,produtivo
+Confirmação de reunião online,Confirmação de presença na reunião online.,produtivo
+Envio de planilha,Segue planilha atualizada com os dados solicitados.,produtivo
+Notificação de evento,"Evento programado para quinta-feira, confirme presença.",produtivo
+Solicitação de relatório,Preciso do relatório atualizado até amanhã.,produtivo
+Atualização de agenda,"Agenda da semana atualizada, favor revisar.",produtivo
+F$%@@,HaWRTWRTYYYB144,improdutivo
+Bom dia !@@,Gostaria de te convidar para a festa,improdutivo
+???,asdkjfhweuir,improdutivo
+Testando email,asdf1234,improdutivo
+Oi!,vc viu meu meme?,improdutivo
+!!!,qwerty,improdutivo
+Mensagem aleatória,blablabla,improdutivo
+Confuso,não sei oq escrever,improdutivo
+Alert#,$$$%%%,improdutivo
+Spam spam,xxxxx,improdutivo
+Hey!,vc tem tempo?,improdutivo
+123,456,improdutivo
+Teste,teste teste,improdutivo
+Hahaha,lololol,improdutivo
+Random,!!!???,improdutivo
+???,asdfghjkl,improdutivo
+Foo,bar,improdutivo
+Hi!,check this out,improdutivo
+Lorem,ipsum dolor sit amet,improdutivo
+Ping,pong,improdutivo
+Email confuso,não sei oq escrever,improdutivo
+F@#,*&^%$#@!,improdutivo
+Mensagem,zzzxxxccc,improdutivo
+???,qwertyuiop,improdutivo
+Confuso 2,lorem ipsum,improdutivo
+Texto estranho,asdasdasd,improdutivo
+Teste 2,123123123,improdutivo
+F@#2,!@#$%^,improdutivo
+Haha2,lol,improdutivo
+Spam2,xxxxx,improdutivo
+Confuso 3,hjklpoiuy,improdutivo
+Oi2,vc chegou em casa?,improdutivo
+Mensagem aleatória 2,aaaaa,improdutivo
+Corrente,Se você não enviar para 10 pessoas...,improdutivo
+Propaganda,Compre já este produto incrível!,improdutivo
+Notícia aleatória,Você viu o que aconteceu na TV ontem?,improdutivo
+Convite para churrasco,"Vai ter churrasco sábado, confirma presença!",improdutivo
+Video engraçado,Olha esse link kkkkk,improdutivo
+Corrente motivacional,Bom dia! Nunca desista dos seus sonhos,improdutivo
+Spam de desconto,"50% OFF só hoje, clique aqui!",improdutivo
+Piada,Por que a galinha atravessou a rua?,improdutivo
+Mensagem pessoal,"Cheguei em casa, tá tudo bem",improdutivo
+Zoeira,Mano olha essa zoeira kkk,improdutivo
+Corrente espiritual,Reze esta oração e compartilhe,improdutivo
+Propaganda aleatória,Ganhe dinheiro fácil em casa!,improdutivo
+Spam phishing,"Sua conta será bloqueada, clique aqui para atualizar",improdutivo
+Corrente engraçada,"Se rir, compartilhe",improdutivo
+Mensagem sem contexto,ashduashduashd,improdutivo
+Link suspeito,http://xyz-spam.com,improdutivo
+Emoji spam,😂😂😂😂😂😂😂,improdutivo
