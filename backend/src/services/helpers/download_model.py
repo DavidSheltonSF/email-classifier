@@ -13,8 +13,8 @@ def download_model() :
     # Se for privado, precisa do token: export HF_TOKEN=xxx
     classifier = pipeline(
         'text-classification', 
-        model="davidshelton/email-classifier-soft-test", 
-        tokenizer="davidshelton/email-classifier-soft-test"
+        model="davidshelton/email-classifier-soft", 
+        tokenizer="davidshelton/email-classifier-soft"
     )
 
     classifier.save_pretrained(MODEL_PATH)
