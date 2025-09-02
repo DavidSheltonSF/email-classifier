@@ -13,4 +13,4 @@ services:
     build: ./frontend
     container_name: frontend
     ports:
-      - "80:80"
+      - "${FRONTEND_PORT}:80"
