@@ -45,7 +45,7 @@ classifyButton.addEventListener('click', async (e) => {
       formData.append('file', fileInput.files[0]);
 
       response = await fetch(
-        `${hostMap['render']}:8000/classify/email-pdf`,
+        `${hostMap['localhost']}:8000/classify/email-pdf`,
         {
           method: 'POST',
           body: formData,
@@ -53,7 +53,7 @@ classifyButton.addEventListener('click', async (e) => {
       );
     } else {
       response = await fetch(
-        `${hostMap['render']}:8000/classify/email`,
+        `${hostMap['localhost']}:8000/classify/email`,
         {
           method: 'POST',
           headers: {
