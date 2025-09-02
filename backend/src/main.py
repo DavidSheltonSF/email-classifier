@@ -9,8 +9,8 @@ download_model()
 app = FastAPI()
 
 origins = [
-  "http://localhost:8000",
-  "http://0.0.0.0:8000",
+  "http://localhost:5501",
+  "http://0.0.0.0:5501",
 ]
 
 app.add_middleware(
