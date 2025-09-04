@@ -1,4 +1,12 @@
-from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification, BitsAndBytesConfig
+from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification
+import torch
+from huggingface_hub import login 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+login(os.getenv('HUGGINGFACE_HUB_TOKEN'))
 
 class ClassifierModel:
   _instance = None
@@ -15,11 +23,9 @@ class ClassifierModel:
 
     repository = 'davidshelton/email-classifier-soft'
 
-    quant_config = BitsAndBytesConfig(load_in_8bit=True)
-
     tokenizer = AutoTokenizer.from_pretrained(repository)
     model = AutoModelForSequenceClassification.from_pretrained(
-      repository, id2label={0: 'produtivo', 1: 'improdutivo'}, quantization_config=quant_config
+      repository, id2label={0: 'produtivo', 1: 'improdutivo'}
     )
     
     self.model = pipeline(
@@ -27,8 +33,8 @@ class ClassifierModel:
         model=model, 
         tokenizer=tokenizer
     )
+    #self.model.push_to_hub(repository)
 
-  
   def classify(self, text: str):
     if not self.model:
       raise Exception('Model not loaded!')
