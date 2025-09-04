@@ -15,9 +15,11 @@ class ClassifierModel:
 
     repository = 'davidshelton/email-classifier-soft'
 
+    quant_config = BitsAndBytesConfig(load_in_8bit=True)
+
     tokenizer = AutoTokenizer.from_pretrained(repository)
     model = AutoModelForSequenceClassification.from_pretrained(
-      repository, id2label={0: 'produtivo', 1: 'improdutivo'}
+      repository, id2label={0: 'produtivo', 1: 'improdutivo'}, quantization_config=quant_config
     )
     
     self.model = pipeline(
