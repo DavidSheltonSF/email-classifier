@@ -23,10 +23,10 @@ class EmailClassifierService:
     classifier = ClassifierModel()
 
     email = f"{subject} {body}"
-    
+
     result = classifier.classify(email)
 
-    reply = repliesMap[result.get('label')]
+    reply = repliesMap[result[0].get('label')]
 
     response = {"result": result, "reply": reply}
 

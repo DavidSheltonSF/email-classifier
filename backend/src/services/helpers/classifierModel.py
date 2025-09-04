@@ -1,4 +1,4 @@
-from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification
+from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification, BitsAndBytesConfig
 
 class ClassifierModel:
   _instance = None
@@ -17,7 +17,7 @@ class ClassifierModel:
 
     tokenizer = AutoTokenizer.from_pretrained(repository)
     model = AutoModelForSequenceClassification.from_pretrained(
-      repository
+      repository, id2label={0: 'produtivo', 1: 'improdutivo'}
     )
     
     self.model = pipeline(
