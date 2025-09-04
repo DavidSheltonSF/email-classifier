@@ -13,7 +13,7 @@ def download_model() :
     repository = 'davidshelton/email-classifier-soft'
     tokenizer = AutoTokenizer.from_pretrained(repository)
     model = AutoModelForSequenceClassification.from_pretrained(
-      repository, load_in_8bit=True,
+      repository
     )
 
 
