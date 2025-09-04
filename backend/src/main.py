@@ -3,8 +3,12 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from src.controllers import classify_controller
 from src.services.helpers.download_model import download_model
+from src.services.helpers.classifierModel import ClassifierModel
 
-download_model()
+#download_model()
+
+classifier = ClassifierModel()
+classifier.load_model()
 
 app = FastAPI()
 
