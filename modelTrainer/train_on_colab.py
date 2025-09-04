@@ -7,10 +7,10 @@ import os
 load_dotenv()
 login(os.getenv('HUGGINGFACE_HUB_TOKEN'))
 
-dataset = load_dataset("csv", data_files={"train": "./backend/modelTrainer/train.csv", "test": "./backend/modelTrainer/test.csv"})
+dataset = load_dataset("csv", data_files={"train": "./train.csv", "test": "./test.csv"})
 
-model_name = "adalbertojunior/distilbert-portuguese-cased"
-# model_name = "neuralmind/bert-base-portuguese-cased"
+#model_name = "adalbertojunior/distilbert-portuguese-cased"
+model_name = "neuralmind/bert-base-portuguese-cased"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=2)
 
@@ -38,23 +38,9 @@ training_args = TrainingArguments(
   num_train_epochs=4,
   weight_decay=0.03,
   push_to_hub=True,
-  hub_model_id="davidshelton/email-classifier-soft"
+  hub_model_id="davidshelton/email-classifier-soft",
+  report_to="none"
 )
-
-# test_training_args = TrainingArguments(
-#     output_dir='./data/results',
-#     eval_strategy="steps",   # troca "epoch" por "steps" para avaliar mais cedo
-#     eval_steps=20,                 # avalia a cada 20 steps
-#     logging_steps=10,              # loga a cada 10 steps
-#     save_strategy="no",            # não salva checkpoints intermediários
-#     learning_rate=5e-5,
-#     per_device_train_batch_size=2, # menor batch → menos memória
-#     num_train_epochs=1,            # só 1 época para testar
-#     max_steps=50,                  # para cedo (50 batches no máx.)
-#     weight_decay=0.01,
-#     push_to_hub=True,
-#     hub_model_id="davidshelton/email-classifier-soft-test"  # repositório no Hugging Face
-# )
 
 trainer = Trainer(
   model=model,
@@ -63,8 +49,5 @@ trainer = Trainer(
   eval_dataset=dataset['test'],
 )
 
-print('training...')
 trainer.train()
-#trainer.push_to_hub()
-model.save_pretrained("./model")
-tokenizer.save_pretrained("./model")
+trainer.push_to_hub()
