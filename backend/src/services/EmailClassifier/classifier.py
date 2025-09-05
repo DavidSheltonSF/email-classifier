@@ -28,6 +28,6 @@ class EmailClassifierService:
     print(result)
     reply = repliesMap[result.get('label')]
 
-    response = {"result": result, "reply": reply}
+    response = {"result": {"label": result['label']}, "reply": reply}
 
     return response
