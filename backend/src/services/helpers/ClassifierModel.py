@@ -38,6 +38,15 @@ class ClassifierModel:
     )
     #self.model.save_pretrained('./backend/model')
 
+
+  def load_model_localy(self):
+    if(self.model):
+      return None
+    
+    tokenizer = AutoTokenizer.from_pretrained(f"{self._local_model_path}/tokenizer")
+    model = AutoModelForSequenceClassification.from_pretrained(f"{self._local_model_path}/model")
+    self.model = pipeline('text-classification', model=model, tokenizer=tokenizer)
+  
   def classify(self, text: str):
     if not self.model:
       raise Exception('Model not loaded!')
