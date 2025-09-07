@@ -64,8 +64,3 @@ class ClassifierModel:
     if not self.model:
       raise Exception('Model not loaded!')
     return self.model(text)
-  
-
-classifier = ClassifierModel()
-classifier.load_model_localy()
-print(classifier.classify('Aguardando Atendimento Olá, me chamo David e ainda estou aguardando o retorno do meu atentimento.'))
