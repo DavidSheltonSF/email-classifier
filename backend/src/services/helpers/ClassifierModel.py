@@ -51,8 +51,6 @@ class ClassifierModel:
         model=model, 
         tokenizer=tokenizer
     )
-    #self.model.save_pretrained(self._local_model_path)
-
 
   def load_model_localy(self):
     if(self.model):
