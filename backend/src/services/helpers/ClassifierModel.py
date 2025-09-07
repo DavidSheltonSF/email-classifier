@@ -26,7 +26,8 @@ class ClassifierModel:
 
     tokenizer = AutoTokenizer.from_pretrained(self._repository_link)
     model = AutoModelForSequenceClassification.from_pretrained(
-      self._repository_link
+      self._repository_link,
+      id2label={0: "produtivo", 1: "improdutivo"}
     )
 
     model = quantize_dynamic(model, {torch.nn.Linear}, dtype=torch.qint8)
@@ -36,20 +37,23 @@ class ClassifierModel:
         model=model, 
         tokenizer=tokenizer
     )
-    #self.model.save_pretrained('./backend/model')
+    #self.model.save_pretrained(self._local_model_path)
 
 
   def load_model_localy(self):
     if(self.model):
       return None
     
-    tokenizer = AutoTokenizer.from_pretrained(f"{self._local_model_path}/tokenizer")
-    model = AutoModelForSequenceClassification.from_pretrained(f"{self._local_model_path}/model")
+    tokenizer = AutoTokenizer.from_pretrained(f"{self._local_model_path}")
+    model = AutoModelForSequenceClassification.from_pretrained(f"{self._local_model_path}", id2label={0: "produtivo", 1: "improdutivo"})
     self.model = pipeline('text-classification', model=model, tokenizer=tokenizer)
   
   def classify(self, text: str):
     if not self.model:
       raise Exception('Model not loaded!')
-    
     return self.model(text)
   
+
+classifier = ClassifierModel()
+classifier.load_model_localy()
+print(classifier.classify('Aguardando Atendimento Olá, me chamo David e ainda estou aguardando o retorno do meu atentimento.'))
