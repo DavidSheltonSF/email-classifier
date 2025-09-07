@@ -18,7 +18,7 @@ class ClassifierModel:
       cls._instance.model = None
     return cls._instance
   
-  def load_model(self):
+  def load_model_from_hub(self):
     if(self.model):
       return None
 
