@@ -11,6 +11,8 @@ login(os.getenv('HUGGINGFACE_HUB_TOKEN'))
 
 class ClassifierModel:
   _instance = None
+  _repository_link = 'davidshelton/email-classifier-soft'
+  _local_model_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../', 'model'))
 
   def __new__(cls):
     if cls._instance is None:
@@ -20,13 +22,11 @@ class ClassifierModel:
   
   def load_model_from_hub(self):
     if(self.model):
-      return None
+      return 
 
-    repository = 'davidshelton/email-classifier-soft'
-
-    tokenizer = AutoTokenizer.from_pretrained(repository)
+    tokenizer = AutoTokenizer.from_pretrained(self._repository_link)
     model = AutoModelForSequenceClassification.from_pretrained(
-      repository
+      self._repository_link
     )
 
     model = quantize_dynamic(model, {torch.nn.Linear}, dtype=torch.qint8)
