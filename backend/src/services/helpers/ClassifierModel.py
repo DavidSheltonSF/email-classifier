@@ -29,8 +29,6 @@ class ClassifierModel:
       self._repository_link,
       id2label={0: "produtivo", 1: "improdutivo"}
     )
-
-    model = quantize_dynamic(model, {torch.nn.Linear}, dtype=torch.qint8)
   
     self.model = pipeline(
         'text-classification', 
