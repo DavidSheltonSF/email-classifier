@@ -1,9 +1,7 @@
 from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification
-import torch
 from huggingface_hub import login 
 import os
 from dotenv import load_dotenv
-from torch.ao.quantization import quantize_dynamic
 
 load_dotenv()
 
