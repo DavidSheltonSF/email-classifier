@@ -31,16 +31,12 @@ class ClassifierModel:
 
     model = quantize_dynamic(model, {torch.nn.Linear}, dtype=torch.qint8)
   
-    for name, param in model.named_parameters():
-        print('oo')
-        print(name, param.dtype)
-
     self.model = pipeline(
         'text-classification', 
         model=model, 
         tokenizer=tokenizer
     )
-    #self.model.push_to_hub(repository)
+    #self.model.save_pretrained('./backend/model')
 
   def classify(self, text: str):
     if not self.model:
