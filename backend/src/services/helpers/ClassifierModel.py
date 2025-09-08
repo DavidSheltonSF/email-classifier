@@ -1,11 +1,5 @@
 from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification
-from huggingface_hub import login 
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
-
-login(os.getenv('HUGGINGFACE_HUB_TOKEN'))
 
 class ClassifierModel:
   _instance = None
