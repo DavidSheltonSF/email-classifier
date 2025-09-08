@@ -1,81 +1,144 @@
 subject,body,label
-"Confirmação de participação","Confirmando minha participação na reunião de amanhã.","produtivo"
-"Agenda da reunião","Segue a agenda para a reunião das 10h.","produtivo"
-"Relatório mensal","O relatório de vendas de abril está anexado.","produtivo"
-"Atualização do projeto","Precisamos da sua aprovação no documento X para prosseguir com o projeto.","produtivo"
-"Tarefa concluída","A tarefa de integração foi finalizada com sucesso.","produtivo"
-"Perguntas sobre o projeto","Tenho algumas dúvidas sobre as especificações do projeto.","produtivo"
-"Feedback sobre o trabalho","Gostaria de dar um feedback sobre o seu relatório.","produtivo"
-"Planejamento para o Q4","Vamos discutir o planejamento estratégico para o próximo trimestre.","produtivo"
-"Ação necessária","Por favor, revise e assine o contrato até o final do dia.","produtivo"
-"Próximos passos","Aqui estão os próximos passos para o lançamento do produto.","produtivo"
-"Documentos finais","Anexei os documentos finais que você solicitou.","produtivo"
-"Convite para entrevista","Gostaríamos de convidá-lo para uma entrevista.","produtivo"
-"Reunião de alinhamento","Vamos agendar uma reunião de alinhamento para o projeto Z.","produtivo"
-"Solicitação de dados","Por favor, envie-me os dados de performance do último mês.","produtivo"
-"Orçamento aprovado","O orçamento para a campanha foi aprovado.","produtivo"
-"Status do ticket","O ticket #1234 foi resolvido.","produtivo"
-"Aprovação de design","O design final do site está pronto para sua aprovação.","produtivo"
-"Reunião cancelada","A reunião das 14h foi cancelada, vamos remarcar em breve.","produtivo"
-"Informações sobre o cliente","Segue as informações de contato do novo cliente.","produtivo"
-"Apresentação para o cliente","A apresentação está pronta, vamos revisar os pontos principais.","produtivo"
-"Solicitação de reembolso","Anexei o formulário para o reembolso das despesas.","produtivo"
-"Atualização de cronograma","O cronograma foi atualizado, por favor, verifique as novas datas.","produtivo"
-"Convite para webinar","Gostaríamos de convidá-lo para nosso próximo webinar.","produtivo"
-"Informação importante","Há uma atualização crítica no sistema, leia com atenção.","produtivo"
-"Ata da reunião","Ata da reunião de hoje está anexada para sua revisão.","produtivo"
-"Confirmação de recebimento","Confirmo o recebimento dos documentos.","produtivo"
-"Feedback sobre o código","Por favor, revise este trecho de código e me dê um feedback.","produtivo"
-"Questões sobre o contrato","Tenho algumas perguntas sobre as cláusulas do contrato.","produtivo"
-"Novo procedimento","Foi implementado um novo procedimento, por favor leia o manual.","produtivo"
-"Agradecimento","Obrigado por sua ajuda, foi fundamental para a conclusão do projeto.","produtivo"
-"Proposta de parceria","Gostaria de apresentar uma proposta de parceria.","produtivo"
-"Confirmação de pagamento","Confirmo que o pagamento foi processado.","produtivo"
-"Pesquisa de satisfação","Por favor, responda à nossa pesquisa de satisfação do cliente.","produtivo"
-"Análise de dados","Análise de dados do último trimestre está pronta.","produtivo"
-"Agendamento de reunião","Vamos agendar a reunião para a próxima semana.","produtivo"
-"Status da entrega","O status da sua entrega foi atualizado, por favor, verifique.","produtivo"
-"Documento para revisão","Por favor, revise o documento em anexo e me retorne.","produtivo"
-"Confirmação de reserva","Sua reserva foi confirmada com sucesso.","produtivo"
-"Relatório de bugs","Relatório de bugs e problemas do sistema.","produtivo"
-"Mensagem de Boas-vindas","Bem-vindo ao nosso time! Estamos felizes em tê-lo a bordo.","improdutivo"
-"Compartilhe este vídeo","Assista este vídeo hilário de gatos!","improdutivo"
-"Parabéns pelo aniversário!","Feliz aniversário! Desejo tudo de bom para você.","improdutivo"
-"Vi este link e lembrei de você","Vi este artigo sobre games e lembrei de você.","improdutivo"
-"O que você acha?","Vi esta foto de um carro e pensei no que você achava.","improdutivo"
-"Olá!","Só queria dizer oi e perguntar como você está.","improdutivo"
-"Fim de semana","O que você vai fazer no fim de semana?","improdutivo"
-"Memes para começar a semana","Aqui estão alguns memes para animar sua semana.","improdutivo"
-"Descontos incríveis!","Compre agora com 50% de desconto!","improdutivo"
-"Novidades do dia","Veja as últimas novidades da internet.","improdutivo"
-"RSVP para o churrasco","Você vai vir no churrasco de sábado?","improdutivo"
-"Pergunta rápida","Será que você poderia me ajudar com uma dúvida pessoal?","improdutivo"
-"Piada do dia","Por que o tomate não anda? Porque ele é um fruto!","improdutivo"
-"Olha só","Olha só o que eu achei na internet, muito bom.","improdutivo"
-"Link interessante","Este link sobre uma notícia é bem interessante.","improdutivo"
-"Parabéns pelo bebê!","Parabéns pelo seu novo bebê!","improdutivo"
-"Vamos almoçar?","Vamos almoçar juntos na terça-feira?","improdutivo"
-"Receita","Aqui está a receita de bolo que você me pediu.","improdutivo"
-"Obrigado!","Só queria agradecer por tudo, você é incrível.","improdutivo"
-"Recomendação de série","Você precisa assistir esta série, é muito boa.","improdutivo"
-"Alerta de promoção","Só para te avisar sobre uma promoção relâmpago!","improdutivo"
-"Não perca","Não perca a live de hoje, vai ser incrível!","improdutivo"
-"Fotos das férias","Anexei as fotos das minhas férias, dê uma olhada.","improdutivo"
-"Novas notícias","Veja o que aconteceu na minha cidade hoje.","improdutivo"
-"Vi essa matéria","Vi essa matéria no jornal e lembrei de você.","improdutivo"
-"Convite para um jogo","Quer jogar online comigo mais tarde?","improdutivo"
-"Viagem","Minha viagem de férias foi incrível, segue as fotos.","improdutivo"
-"Anúncio","Anúncio sobre o novo evento da comunidade.","improdutivo"
-"Que dia foi o último?","Que dia foi o último jogo do nosso time?","improdutivo"
-"Novo clipe","Saiu o novo clipe da minha banda favorita!","improdutivo"
-"Vi este post","Vi este post nas redes sociais e achei engraçado.","improdutivo"
-"Curiosidade do dia","Você sabia que as borboletas sentem o gosto com os pés?","improdutivo"
-"Assunto aleatório","Vamos conversar sobre um assunto aleatório?","improdutivo"
-"Pergunta pessoal","Como está sua família?","improdutivo"
-"Estou em casa","Estou em casa hoje, me avisa se quiser conversar.","improdutivo"
-"Lembrei de você","Lembrei de você por causa de uma música antiga.","improdutivo"
-"Veja isso!","Você tem que ver isso, é muito bom.","improdutivo"
-"Vamos tomar um café?","Vamos tomar um café para colocar o papo em dia?","improdutivo"
-"Nova temporada","Começou a nova temporada daquela série.","improdutivo"
-"Bom dia!","Bom dia para você!","improdutivo"
-"Boa noite!","Boa noite, espero que você tenha um bom descanso.","improdutivo"
+Solicitação de aprovação,"Por favor, aprove o documento para que possamos prosseguir.",produtivo
+Detalhes do evento,Detalhes sobre o evento do próximo mês estão no anexo.,produtivo
+Aviso de manutenção,Haverá uma manutenção programada no sistema.,produtivo
+Atualização de endereço,"Por favor, atualize o endereço de entrega em nosso sistema.",produtivo
+Solicitação de cotação,Gostaria de solicitar uma cotação para o serviço X.,produtivo
+Novo membro da equipe,"Gostaria de apresentar o novo membro da equipe, João.",produtivo
+Acesso ao sistema,Seu acesso ao novo sistema foi liberado.,produtivo
+Reunião individual,Gostaria de agendar uma reunião individual com você.,produtivo
+Lembrete de prazo,Lembrete: o prazo para a entrega do projeto é amanhã.,produtivo
+Convite para evento,Você está convidado para o nosso evento de lançamento.,produtivo
+Confirmação de inscrição,Sua inscrição para o curso foi confirmada.,produtivo
+Material de treinamento,O material de treinamento para o novo software está pronto.,produtivo
+Pesquisa de mercado,Resultados da pesquisa de mercado para sua análise.,produtivo
+Revisão de contrato,"Por favor, revise o contrato antes de assinarmos.",produtivo
+Relatório de gastos,Seu relatório de gastos para o último mês.,produtivo
+Documento assinado,O documento foi assinado digitalmente e está no anexo.,produtivo
+Planejamento de equipe,Gostaria de discutir o planejamento para nossa equipe.,produtivo
+Feedback sobre a proposta,Tenho um feedback sobre a sua proposta de projeto.,produtivo
+Dados de faturamento,Dados de faturamento do último trimestre para sua análise.,produtivo
+Confirmação de pedido,Seu pedido foi processado e está a caminho.,produtivo
+Convidado para o projeto,Você foi convidado a participar do projeto X.,produtivo
+Relatório de desempenho,O relatório de desempenho do seu time está pronto.,produtivo
+Análise de concorrência,Análise detalhada da nossa concorrência.,produtivo
+Novo cliente,"Temos um novo cliente, gostaria de apresentá-lo.",produtivo
+Proposta comercial,Aqui está nossa proposta comercial para o serviço Y.,produtivo
+Reunião de acompanhamento,Vamos fazer uma reunião de acompanhamento na próxima semana.,produtivo
+Tarefa delegada,A tarefa Z foi delegada a você.,produtivo
+Detalhes do projeto,Detalhes e especificações do projeto A para sua revisão.,produtivo
+Status do pedido,O status do seu pedido mudou para 'enviado'.,produtivo
+Aviso de férias,Estarei de férias a partir de segunda-feira.,produtivo
+Confirmação de entrega,Confirmo a entrega dos materiais hoje.,produtivo
+Pauta da reunião,A pauta da reunião de amanhã está no anexo.,produtivo
+Resultados da pesquisa,Resultados da nossa última pesquisa de satisfação.,produtivo
+Convite para apresentação,Gostaria de convidá-lo para a apresentação dos resultados.,produtivo
+Atualização de regras,As novas regras de segurança estão em vigor.,produtivo
+Novo processo,Há um novo processo para a aprovação de despesas.,produtivo
+Lembrete de relatório,Lembrete para o relatório que vence hoje.,produtivo
+Perguntas sobre a proposta,Tenho algumas perguntas sobre a proposta que você enviou.,produtivo
+Confirmação de recebimento do currículo,Confirmo o recebimento do seu currículo.,produtivo
+Aviso de reajuste,Haverá um pequeno reajuste nos preços.,produtivo
+Solicitação de material,Preciso de alguns materiais para a apresentação.,produtivo
+Apresentação final,A apresentação final do projeto está pronta.,produtivo
+Dúvidas sobre o produto,Tenho algumas dúvidas sobre as funcionalidades do produto.,produtivo
+Relatório de erros,Relatório de erros encontrados no sistema.,produtivo
+Confirmação de inscrição,Sua inscrição no evento foi confirmada.,produtivo
+Próxima etapa,A próxima etapa do projeto é a fase de testes.,produtivo
+Solicitação de aprovação,"Por favor, aprove o layout da newsletter.",produtivo
+Informação de contato,Segue a informação de contato do novo fornecedor.,produtivo
+Aviso de atualização,Aviso de uma nova atualização do software.,produtivo
+Relatório de atividades,Relatório de atividades da equipe para a semana.,produtivo
+Planejamento de marketing,Gostaria de discutir o planejamento de marketing.,produtivo
+Resultados de testes,Resultados dos testes de usabilidade estão no anexo.,produtivo
+Convite para workshop,Gostaria de convidá-lo para o nosso workshop.,produtivo
+Lembrete de reunião,Lembrete: nossa reunião é às 15h.,produtivo
+Documento corrigido,O documento foi corrigido e está no anexo.,produtivo
+Aprovação de arte,"Por favor, aprove a arte para a campanha publicitária.",produtivo
+Informação de pagamento,Informação de pagamento para o fornecedor X.,produtivo
+Relatório de vendas,Relatório de vendas detalhado para o mês de maio.,produtivo
+Solicitação de férias,Sua solicitação de férias foi aprovada.,produtivo
+Atualização de status,Status do seu projeto foi atualizado para 'em andamento'.,produtivo
+Confirmação de agendamento,O agendamento da reunião foi confirmado.,produtivo
+Apresentação de resultados,Apresentação dos resultados do último trimestre.,produtivo
+Relatório de estoque,Relatório do estoque atualizado.,produtivo
+Solicitação de licença,Sua solicitação de licença foi recebida e está em análise.,produtivo
+Informação sobre a folha de pagamento,Sua folha de pagamento está disponível.,produtivo
+Convite para café,Gostaria de tomar um café e discutir o projeto.,produtivo
+Aprovação de orçamento,Seu pedido de orçamento foi aprovado.,produtivo
+Detalhes do treinamento,Detalhes sobre o treinamento de amanhã.,produtivo
+Solicitação de reembolso,O reembolso das suas despesas foi processado.,produtivo
+Relatório de gastos,Seu relatório de gastos de viagem.,produtivo
+Feedback sobre a apresentação,Tenho um feedback construtivo sobre sua apresentação.,produtivo
+Relatório de eficiência,Relatório de eficiência operacional do mês.,produtivo
+Recomendação de restaurante,Experimente este novo restaurante na cidade.,improdutivo
+Vídeo engraçado,Assista a este vídeo engraçado que recebi no WhatsApp.,improdutivo
+Qual a sua opinião?,Qual sua opinião sobre o novo livro que li?,improdutivo
+Recomendação de livro,"Você precisa ler este livro, é muito bom.",improdutivo
+Promoção imperdível,"Só hoje, frete grátis em todas as compras!",improdutivo
+Vamos fazer churrasco?,Vamos fazer um churrasco no feriado?,improdutivo
+Convite para bar,Vamos tomar uma cerveja e conversar?,improdutivo
+Receita de bolo,Aqui está a receita de bolo de chocolate que você pediu.,improdutivo
+Mensagem de encorajamento,"Acredite em si mesmo, você é capaz de tudo!",improdutivo
+Convite para jantar,Vamos jantar fora hoje?,improdutivo
+Notícia interessante,Uma notícia interessante sobre ciência.,improdutivo
+Vídeo engraçado,Este vídeo vai te fazer rir.,improdutivo
+Recomendação de restaurante,"Você precisa ir a este restaurante, é fantástico.",improdutivo
+Promoção de viagens,"Promoção de passagens aéreas, corra e aproveite!",improdutivo
+Feliz Ano Novo!,Feliz ano novo! Que este ano seja incrível para você.,improdutivo
+Mensagem de encorajamento,"Acredite em si mesmo, você é capaz de tudo!",improdutivo
+Convite para ir ao cinema,Vamos assistir um filme no cinema hoje?,improdutivo
+Vídeo de gatinho,Olha que fofo este gatinho!,improdutivo
+Promoção imperdível,"Só hoje, frete grátis em todas as compras!",improdutivo
+Anúncio de evento online,Não perca nosso evento online sobre desenvolvimento pessoal.,improdutivo
+Newsletter semanal,Leia nossa newsletter semanal com as últimas notícias.,improdutivo
+Saudades de você!,"Estou com saudades, queria te ver em breve.",improdutivo
+Convite para churrasco,"Vamos fazer um churrasco no domingo, venha!",improdutivo
+Dica de podcast,"Recomendo este podcast, é muito bom.",improdutivo
+Vídeo engraçado,Assista a este vídeo engraçado que recebi no WhatsApp.,improdutivo
+Memes para a equipe,Aqui estão alguns memes que vi na internet.,improdutivo
+Olha o que eu achei,"Olha o que eu achei, te lembras disto?",improdutivo
+Olha o que eu comprei,"Olha o que eu comprei hoje, achei que ia gostar de ver.",improdutivo
+Vamos tomar um café?,Vamos tomar um café para relaxar?,improdutivo
+Recomendação de restaurante,"Você precisa ir a este restaurante, é fantástico.",improdutivo
+Memes para a equipe,Aqui estão alguns memes que vi na internet.,improdutivo
+Promoção imperdível,"Só hoje, frete grátis em todas as compras!",improdutivo
+Fim de ano,Estou animado para o fim de ano e as festas!,improdutivo
+Dica de restaurante,"Conheci um restaurante incrível, você precisa ir.",improdutivo
+Convite para café,Vamos marcar um café e colocar o papo em dia?,improdutivo
+Saudades de você!,"Estou com saudades, queria te ver em breve.",improdutivo
+Notícia viral,"Esta notícia está viralizando, você precisa ler.",improdutivo
+Novas fotos do meu pet,"Olha as novas fotos do meu cachorro, ele está enorme!",improdutivo
+Convite para casamento,Gostaríamos de convidá-lo para nosso casamento.,improdutivo
+Convite para evento cultural,Convite para um evento cultural na cidade.,improdutivo
+Promoção de viagens,"Promoção de passagens aéreas, corra e aproveite!",improdutivo
+Vídeo de gatinho,Olha que fofo este gatinho!,improdutivo
+Recomendação de série,Vi que você gosta de séries e achei que ia gostar desta.,improdutivo
+Bom dia grupo,"Bom dia, pessoal!",improdutivo
+Parabéns!,Parabéns pelo seu sucesso!,improdutivo
+Convite para chá de bebê,Vamos comemorar a chegada do meu bebê!,improdutivo
+Status de relacionamento,Você já viu o novo status de relacionamento do fulano?,improdutivo
+Promoção relâmpago,"Promoção relâmpago de eletrônicos, não perca!",improdutivo
+Vídeo de cachorros,Este vídeo de cachorros é a coisa mais fofa que você verá hoje.,improdutivo
+Vídeo engraçado,Este vídeo vai te fazer rir.,improdutivo
+Convite para café,Vamos marcar um café e colocar o papo em dia?,improdutivo
+Feliz Ano Novo!,Feliz ano novo! Que este ano seja incrível para você.,improdutivo
+Notícias do dia,Leia as notícias mais importantes do dia no nosso portal.,improdutivo
+Convite para almoço,Convido você para almoçar comigo na segunda.,improdutivo
+Feliz Dia das Mães!,Feliz Dia das Mães para sua mãe!,improdutivo
+Notícias do dia,Leia as notícias mais importantes do dia no nosso portal.,improdutivo
+Bom fim de semana!,Tenha um ótimo fim de semana!,improdutivo
+Novas fotos do meu pet,"Olha as novas fotos do meu cachorro, ele está enorme!",improdutivo
+Novas fotos da família,Olha as novas fotos da minha família.,improdutivo
+Fofoca de celebridade,Você soube da última fofoca sobre aquela celebridade?,improdutivo
+Vídeo engraçado,Assista a este vídeo engraçado que recebi no WhatsApp.,improdutivo
+Olha o que eu achei,"Olha o que eu achei no meu armário, é da nossa época.",improdutivo
+Notícias aleatórias,Notícias aleatórias sobre o mundo dos esportes.,improdutivo
+Parabéns!,Parabéns pelo seu sucesso!,improdutivo
+Promoção de viagens,"Promoção de passagens aéreas, corra e aproveite!",improdutivo
+Testes de QI online,Faça este teste de QI e veja se você é um gênio!,improdutivo
+Qual sua opinião?,Qual sua opinião sobre o novo filme da Marvel?,improdutivo
+Vi essa roupa e lembrei de você,Vi esta roupa em uma loja e achei que combinaria com você.,improdutivo
+Vídeo engraçado,Assista a este vídeo engraçado que recebi no WhatsApp.,improdutivo
+Bom trabalho!,Parabéns pelo seu trabalho!,improdutivo
+Vídeo de gatinhos,"Olha este vídeo de gatinhos, é super fofo!",improdutivo
