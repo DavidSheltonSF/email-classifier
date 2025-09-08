@@ -32,8 +32,8 @@ classifyButton.addEventListener('click', async (e) => {
     emailSubjectOutput.value = '';
     emailBodyOutput.value = '';
     messageEmailType.value = '';
-    messageEmailType.classList.remove('positive-message-text-color');
-    messageEmailType.classList.remove('negative-message-text-color');
+    removeClassFromElements([messageEmailType], 'positive-message')
+    removeClassFromElements([messageEmailType], 'negative-message');
     copyStatusMessage.textContent = '';
     copyStatusMessage.classList.remove('positive-message-text-color');
     copyStatusMessage.classList.remove('negative-message-text-color');
