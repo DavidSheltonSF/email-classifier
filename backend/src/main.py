@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from src.controllers import classify_controller
-from backend.src.services.helpers.ClassifierModel import ClassifierModel
+from src.services.helpers.ClassifierModel import ClassifierModel
 
 
 classifier = ClassifierModel()
-classifier.load_model()
+classifier.load_model_localy()
 
 app = FastAPI()
 

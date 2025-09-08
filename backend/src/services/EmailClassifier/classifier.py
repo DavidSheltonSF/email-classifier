@@ -1,5 +1,5 @@
 from src.services.serviceTypes.Email import Email
-from backend.src.services.helpers.ClassifierModel import ClassifierModel
+from src.services.helpers.ClassifierModel import ClassifierModel
 from src.services.errors.email import MissingEmailBodyError, MissingEmailSubjectError
 from src.services.helpers.repliesMap import repliesMap
 
