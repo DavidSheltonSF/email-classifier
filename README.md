@@ -14,15 +14,19 @@ BACKEND_PORT=8000
 FRONTEND_PORT=5501
 ```
 
-3 - Rode o comando para construir o container
+3 - No arquivo main.py, modifique a linha abaixo, chamando o método load_from_hub_and_save(), dessa
+forma o modelo de IA será baixado do hub e salvo localmente
+
+```python
+classifier = ClassifierModel()
+classifier.load_model_localy() # <- substitua esse método
+```
+
+4 - Rode o comando para construir o container
 ```bash
 docker compose up --build
 ```
 
-A primeira vez que a aplicação rodar, será feito o download do modelo de inteligência artificial
-treinado que está hospedado em davidshelton/email-classifier-soft
-
-
 ## Observações
 
-Como o modelo necessário para rodar a aplicação é muito pesado, não foi a hospedagem na nuvem não foi possível.
+Como o modelo necessário para rodar a aplicação é muito pesado, a hospedagem na nuvem não foi possível.
