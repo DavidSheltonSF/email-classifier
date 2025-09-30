@@ -80,7 +80,7 @@ classifyButton.addEventListener('click', async (e) => {
     console.log(result.label);
 
     const messageColor =
-      result.label === 'produtivo' ? 'positive-message' : 'negative-message';
+      result.label === 'ham' ? 'positive-message' : 'negative-message';
     messageEmailType.classList.add(messageColor);
   } catch (error) {
     console.log(error);
