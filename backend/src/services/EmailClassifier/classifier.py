@@ -23,7 +23,7 @@ class EmailClassifierService:
 
     email = f"{subject} {body}"
 
-    result = classifier.classify(email)[0]
+    result = classifier.classify(body)[0]
 
     print(result)
     reply = repliesMap[result.get('label')]

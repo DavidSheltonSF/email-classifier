@@ -35,7 +35,7 @@ class ClassifierModel:
     tokenizer = AutoTokenizer.from_pretrained(self._repository_link)
     model = AutoModelForSequenceClassification.from_pretrained(
       self._repository_link,
-      id2label={0: "produtivo", 1: "improdutivo"}
+      id2label={0: "ham", 1: "spam"}
     )
   
     self.model = pipeline(
@@ -49,7 +49,7 @@ class ClassifierModel:
       return None
     
     tokenizer = AutoTokenizer.from_pretrained(f"{self._local_model_path}")
-    model = AutoModelForSequenceClassification.from_pretrained(f"{self._local_model_path}", id2label={0: "produtivo", 1: "improdutivo"})
+    model = AutoModelForSequenceClassification.from_pretrained(f"{self._local_model_path}", id2label={0: "ham", 1: "spam"})
     self.model = pipeline('text-classification', model=model, tokenizer=tokenizer)
   
   def classify(self, text: str):
