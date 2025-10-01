@@ -120,13 +120,13 @@ copyButton.addEventListener('click', async (e) => {
   navigator.clipboard
     .writeText(text)
     .then(() => {
-      console.log('Texto copiado com sucesso!');
-      message = 'Email copiado!';
+      console.log('Text copied successfuly!');
+      message = 'Email copied!';
       messageColor = 'positive-message-text-color';
     })
     .catch((err) => {
       console.log(err);
-      message = 'Algo deu errado!';
+      message = 'Something went wrong!';
       messageColor = 'negative-message-text-color';
     })
     .finally(() => {
