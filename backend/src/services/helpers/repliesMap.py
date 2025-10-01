@@ -1,10 +1,11 @@
 repliesMap = {
   "ham": {
-    "subject": "Recebemos sua mensagem",
-    "body": "Obrigado pelo seu contato. Vamos analisar sua solicitação e retornaremos em breve.\n\nAtenciosamente,\nTime AutoU"
-  },
+  "subject": "We are reviewing your request",
+  "body": "Thank you for reaching out. We have received your request and will review it shortly. We will get back to you as soon as possible.\n\nSincerely,\nThe EnterpriseX Team"
+},
   "spam": {
-    "subject": "Recebemos sua mensagem",
-    "body": "Agradecemos sua mensagem, mas este canal é destinado a assuntos relacionados à empresa.\n\nAtenciosamente,\nTime AutoU"
-  }
+  "subject": "We received your message",
+  "body": "Thank you for your message, but this channel is intended for matters related to the company.\n\nSincerely,\nThe EnterpriseX Team"
+}
+
 }
